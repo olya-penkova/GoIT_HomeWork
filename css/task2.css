@@ -74,12 +74,37 @@ li.header {
     zoom:1;
 text-align: center;
 }
-li.header:hover {
+li.header:first-child:hover {
 	background-color: #484848;
 	border-left: 1px;
 	border-right: 1px;
 	border-color: #838383;
 	border-style: solid;
+	cursor: pointer;
+}
+li.header:nth-child(2):hover {
+	background-color: #484848;
+	border-left: 1px;
+	border-right: 1px;
+	border-color: #838383;
+	border-style: solid;
+	cursor: pointer;
+}
+li.header:nth-child(3):hover {
+	background-color: #484848;
+	border-left: 1px;
+	border-right: 1px;
+	border-color: #838383;
+	border-style: solid;
+	cursor: pointer;
+}
+li.header:nth-child(4):hover {
+	background-color: #484848;
+	border-left: 1px;
+	border-right: 1px;
+	border-color: #838383;
+	border-style: solid;
+	cursor: pointer;
 }
 .left {
 	float: left;
@@ -109,6 +134,7 @@ ul.list {
 	background-color: #f9f9f9;
 	padding: 20px 10px 5px 30px;
 	font-weight: bold;
+	cursor: pointer;
 }
 .right {
 	float: right;
@@ -157,16 +183,20 @@ li.footer {
 }
 .bottom li:hover {
 	text-decoration: underline;
+	cursor: pointer;
 }
 .bottom li:nth-child(5) {
 text-decoration: none;
+cursor: auto;
 }
 .bottom li:nth-child(6) {
 text-decoration: none;
+cursor: auto;
 }
 .bottom li:last-child {
 	width: 150px;
 	text-decoration: none;
+	cursor: auto;
 }
 
 
