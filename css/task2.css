@@ -56,6 +56,11 @@ body {
 	margin: 0px 665px 0px 185px;
 	padding: 0px 35px 35px 35px;
 }
+.box {
+	height: 40px;
+	width: 1015px;
+	background-color: #575757;
+}
 ul.top {
 	font-size: 0px;
     line-height:0px;
@@ -63,45 +68,21 @@ ul.top {
 }
 li.header {
 	display: inline-block;
-	background-color: #575757;
 	font-size: 14.67px;
 	font-family: Myriad Pro Regular;
 	color: #ffffff;
 	line-height:40px;
-	width: 145px;
     letter-spacing:normal;
     display: -moz-inline-stack!important;
     zoom:1;
 text-align: center;
+width: 145px;
 }
-li.header:first-child:hover {
+li.header:hover {
 	background-color: #484848;
 	border-left: 1px;
 	border-right: 1px;
-	border-color: #838383;
-	border-style: solid;
-	cursor: pointer;
-}
-li.header:nth-child(2):hover {
-	background-color: #484848;
-	border-left: 1px;
-	border-right: 1px;
-	border-color: #838383;
-	border-style: solid;
-	cursor: pointer;
-}
-li.header:nth-child(3):hover {
-	background-color: #484848;
-	border-left: 1px;
-	border-right: 1px;
-	border-color: #838383;
-	border-style: solid;
-	cursor: pointer;
-}
-li.header:nth-child(4):hover {
-	background-color: #484848;
-	border-left: 1px;
-	border-right: 1px;
+	width: 143px;
 	border-color: #838383;
 	border-style: solid;
 	cursor: pointer;
@@ -161,21 +142,26 @@ ul.list {
 	padding: 0px;
 	line-height: 30px;
 }
+.cont {
+	height: 40px;
+	width: 1015px;
+	background-color: #e1e1e1;
+	clear: both;
+	position: relative;
+}
 ul.bottom {
 	font-size: 0px;
     line-height:0px;
     letter-spacing:-1px;
-    clear: both;
 }	
 li.footer {
-	display: inline-block;
+	float: left;
 	position: relative;
-	background-color: #e1e1e1;
 	font-size: 13.33px;
 	font-family: Myriad Pro Regular;
 	color: #2c2c2c;
 	line-height:40px;
-	width: 144px;
+	width: 145px;
     letter-spacing:normal;
     display: -moz-inline-stack!important;
     zoom:1;
@@ -185,20 +171,22 @@ li.footer {
 	text-decoration: underline;
 	cursor: pointer;
 }
-.bottom li:nth-child(5) {
-text-decoration: none;
-cursor: auto;
+li.footer:last-child {
+	position: relative;
+	font-size: 13.33px;
+	font-family: Myriad Pro Regular;
+	color: #2c2c2c;
+	line-height:40px;
+	width: 200px;
+    letter-spacing:normal;
+    display: -moz-inline-stack!important;
+    zoom:1;
+    text-align: center;
+    float: right;
 }
-.bottom li:nth-child(6) {
-text-decoration: none;
-cursor: auto;
-}
-.bottom li:last-child {
-	width: 150px;
+li.footer:last-child:hover {
+	cursor: inherit;
 	text-decoration: none;
-	cursor: auto;
 }
-
-
 
 
