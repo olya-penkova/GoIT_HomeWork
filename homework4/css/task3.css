@@ -1,0 +1,231 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+    /*padding: 38px 47px 30px 0px;
+    background-repeat: no-repeat;
+    position: relative;*/
+  }
+.wrapper{
+  width: 1280px;
+  height: 1100px;
+  margin: 0 auto;
+  position: relative;
+  background-image: url(img/background.png);
+  background-repeat: no-repeat;
+  }
+  /*top: 38px;
+  left: 151px;
+  /*margin: 0 0 0 -100px;*/
+  .page {
+    width: 1000px;
+    height: 990px;
+    position: absolute;
+    margin: 38px 151px;
+  box-shadow: 0 0 3px rgba(0,0,0,0.5);
+  border-bottom: 1px solid black;
+  }
+header{
+  height: 176px;
+  background-color: white;
+}
+.Logo img{
+padding-left: 50px;
+padding-top: 12px;
+}
+header .Logo p{
+color: #128aa7;
+position: absolute;
+left: 130px;
+top: 105px;
+font-size: 12px;
+font-family: Tahoma;
+
+}
+.contact{
+position: absolute;
+color: #128aa7;
+right: 50px;
+top:5px;
+font-size: 12px;
+line-height: normal;
+}
+.bo{
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.contries li {
+  list-style: none;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center top;
+  text-align: center;
+  width: 60px;
+  padding-top: 42px;
+  }
+.contries ul{
+  position: absolute;
+  right: 20px;
+  top:110px;
+}
+.contries li a{
+  font-size: 10px;
+  color: #128aa7;
+}
+.menu{
+  background-color: #333333;
+  height: 30px;
+  border-bottom: 2px solid black;
+  margin-top: -3px;
+  position: relative;
+  z-index:50;
+}
+.menu li{
+  display: inline-block;
+  width: 130px;
+  text-align: center;
+  color: white;
+  height: 30px;
+  line-height: normal;
+  padding-top: 7px;
+  position: relative;
+  font-size: 14px;
+
+}
+.menu li ul{
+  display: none;
+  background:#333333;
+  position: absolute;
+  left: 0;
+  top: 21px;
+  width: 150px;
+  text-align: left;
+  z-index:4;
+  border-top:2px solid black;
+  margin-top: 9px;
+}
+.menu li ul li{
+display: inline-block;
+text-align: left;
+height: 15px;
+margin: 2px 10px;
+
+}
+.menu li ul li:last-child{
+  margin-bottom: 5px;
+}
+
+.menu li:hover ul{
+  display: block;
+  cursor: pointer;
+}
+.menu ul li:hover{
+  cursor: pointer;
+}
+
+.down{
+  display: inline-block;
+  vertical-align: -3px;
+  border: 5px solid transparent;
+  border-top: 5px solid white;
+  width: 0;
+}
+.coloumn{
+  height: 540px;
+  width: 990px;
+  margin-top: 2px;
+  float: left;
+  margin-bottom: 10px;
+  z-index: 10;
+}
+.left{
+  width: 200px;
+  height: 540px;
+  float: left;
+  background-color: #edeef0;
+  position: absolute;
+
+}
+.center{
+  width: 598px;
+  height: 540px;
+  float: left;
+  position: absolute;
+  margin-left: 200px;
+  border-right: #c7cacf 1px solid;
+  border-left: #c7cacf 1px solid;
+}
+.right{
+  width: 200px;
+  height: 540px;
+  float: left;
+  margin-left: 798px;
+  background-color: #edeef0;
+  position: absolute;
+}
+.right h2,
+.left h2{
+margin-top: 5px;
+font-size: 18px;
+font-weight: bold;
+text-align: center;
+}
+.coloumn:after{
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.right p,
+.left p{
+  font-size: 14px;
+  font-weight: normal;
+  padding: 10px;
+  line-height: 1.5em;
+  font-family: Tahoma;
+}
+.copy{
+  width: 999px;
+  height: 50px;
+  }
