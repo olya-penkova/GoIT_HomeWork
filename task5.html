@@ -6,27 +6,42 @@
 </head>
 <body>
 	<div class="header"><!--помещаем верхнее меню-->
-		
+		<ul class="containier">
+		<li class="enter">Ola! <a href="#">Entar</a> ou <a href="#">Cadastre-se</a></li>
+		<li class="link"><a href="#"><img src="img/whiteflag.png">Minhas Ofertas</a></li>
+		<li class="menu">
+		    <ul class="top">
+		         <li>Meu YouBike</li>
+		         <li>Vender</li>
+		         <li>Forum</li>
+		         <li>Contacto</li>
+		         <li>Ajuda</li>
+		     </ul>
+		</li>    
+		</ul>
 	</div>
 	<div class="wrapper" style="background-image: url(img/backimg.png)"><!--помещаем форму на фоне картинки-->
          <div class="form">
              <div class="headform">
          	<h2>Cadastre-se</h2>
              </div >
-             <div><!--список с формами-->
+             <div class="list"><!--список с формами-->
+             <form action="/">
              <ul>
-             <li><form>
-             	<button><img src="img/fbuttom.png" alt="Log in with Facebook"></button>
-             </form></li>
+             <li><button type="submit" style="background-image: url(img/fbuttom.png)"></button></li>
              <li><hr> OU <hr></li>
-             <li><input type="text"> </li>
-             <li><input type="text"> </li>
-             <li><input type="text"> </li>
-             <li><input type="password"> </li>
-             <li><input type="password"> </li>
+             <li><input type="text" name="first name" placeholder="First name" required> </li>
+             <li><input type="text" name="last name" placeholder="Last name" required> </li>
+             <li><input type="email" name="email" placeholder="Email Adress" required> </li>
+             <li><input type="password" placeholder="Choose Password" required></li>
+             <li><input type="password" placeholder="Password Confirm" required></li>
+             <li><input type="checkbox" id="update"><label for="update">Send me Youbike apdates and tips</label></li>
+             <li><button type="submit" class="create">Create my account</button></li>
+             <li><p class="last">By cliking the button above, you agree to the Terms of Service Xiew our Privacy Policy</p></li>
              </ul>
+             </form>
            	 </div>
-         </div>
+         </div> 	 
 	</div>
 </body>
 </html>

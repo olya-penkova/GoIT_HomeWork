@@ -42,7 +42,11 @@ table {
 	border-spacing: 0;
 }
 body {
-  margin: 0 auto;
+  margin-top: 0px;
+  position: relative;
+  background-color: #d2cece;
+  height: 1000px;
+	width: 1000px;
 }
 td {
   height: 50px;
@@ -54,6 +58,13 @@ td {
 .table {
   height: 480px;
   width: 480px;
+  border-collapse: collapse;
+	border-spacing: 0;
+  position: absolute;
+  margin: ;
+  /*top: 50%;
+    left: 50%;*/
+    margin: 10% 50%;
   background-color: white;
 }
 .yellow {
@@ -67,6 +78,34 @@ td {
 }
 .blue {
   background-color: #0f4c88;
+}
+.blnbtn {
+	border-left: 1px solid black; 
+	border-top: 1px solid black;
+}
+.btn {
+	border-top: 1px solid black;
+}
+.bln {
+	border-left: 1px solid black;
+}
+#btnbrn {
+    border-right: 1px solid black; 
+	border-top: 1px solid black;
+}
+#brn {
+	border-right: 1px solid black;
+}
+.bbnbrn {
+	border-right: 1px solid black; 
+	border-bottom: 1px solid black;
+}
+#blnbbn {
+	border-left: 1px solid black; 
+	border-bottom: 1px solid black;
+}
+.bbn {
+	border-bottom: 1px solid black;
 }
 
 
