@@ -60,12 +60,18 @@ table {
          url('../fonts/helveticaneuecyr-black-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-
-}   
+}
+body {
+	background-color: #d2cece;
+}
+.frame {
+	margin: 0% auto;
+	height: 1065px;
+	width: 1215px;
+}
 .header {
 	height: 35px;
 	width: 1215px;
-	position: relative;
     background-color: #074c89;
     display: inline-block;
     margin-bottom: -5px;
@@ -139,7 +145,6 @@ height: 35px;
 }
 .wrapper {
 	clear: both;
-	margin-top: 0px;
 	height: 1030px;
 	width: 1215px;
 	position: relative;
