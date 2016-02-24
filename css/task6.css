@@ -64,11 +64,11 @@ header {
     letter-spacing:-1px;
 }
 .top li {
-	letter-spacing:1px;
     display: -moz-inline-stack!important;
     zoom:1;
     line-height: 25px;
 	text-align:center;
+    letter-spacing: 1px;
 }
 .fone {
 	width: 290px;
@@ -111,7 +111,6 @@ header {
  	height: 17px;
  	width: 115px;
  	float: left;
- 	/*margin-right: 3px;*/
  	margin-top: 3px;
  	border: none;
  	border-radius: 2px;
