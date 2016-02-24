@@ -46,14 +46,14 @@ body {
 }
 .wrapper {
 	height: 1315px;
-	width: 1000px;
+	width: 910px;
 	background-color: white;
-	padding: 15px 45px 0px 45px;
+	padding: 10px 45px 0px 45px;
 	margin: 0px auto;
 }
 header {
 	height: 25px;
-	width: 1000px;
+	width: 910px;
 	margin: 0 auto;
 	/*padding: 5px;*/
 }
@@ -64,11 +64,11 @@ header {
     letter-spacing:-1px;
 }
 .top li {
-	letter-spacing:normal;
+	letter-spacing:1px;
     display: -moz-inline-stack!important;
     zoom:1;
-    text-align: center;
     line-height: 25px;
+	text-align:center;
 }
 .fone {
 	width: 290px;
@@ -79,13 +79,13 @@ header {
 	font-family:  Arial;
 }
 .login {
-	width: 500px;
+	width: 495px;
 	height: 25px;
 	float: left;
 	background: #0d365a;
     background: linear-gradient(to top, #0d365a, #1f6685);
     border-radius: 5px;
-    margin-left: 17px;
+    margin-left: 23px;
     box-shadow: 1px 1px 3px 0px rgba(180,180,180,0.75);
 }
 .login.logbut {
@@ -128,14 +128,14 @@ header {
  .ent {
  	float: left;
  	height: 25px;
- 	width: 35px;
+ 	width: 40px;
  	border: none;
  	background: inherit;
  	color: white;
  	font-size: 11px;
  	font-family: Lucida;
- 	padding-right: 0px;
  	cursor: pointer;
+ 	margin-right: 4px;
  }
  .reg {
  	float: left;
@@ -153,7 +153,7 @@ header {
  	color: #bfbfbf;
     font-size: 11px;
  	font-family: Lucida;
- 	margin-left: 25px;	
+ 	margin-left: 13px;	
  }
 
 nav {
@@ -164,20 +164,21 @@ nav {
 	box-shadow: 0 0 3px rgba(0,0,0,0.5);
 	text-align: center;
 	float: right;
+	margin-right: 8px;
 }
 .foto {
-	height: 235px;
-	width: 1000px;
-	margin: 5px auto;
+	height: 238px;
+	width: 909px;
+	margin: 10px auto;
 }
 .menu {
 	height: 35px;
-	width: 1000px;
-	margin: 5px auto;
+	width: 910px;
+	margin: -7px auto;
 	background: #030303;
     background: linear-gradient(to top, #030303, #4d5663);
     border-radius: 5px;
-    box-shadow: 5px 5px 5px 0px rgba(80,82,94,0.5);
+    box-shadow: 2px 3px 5px 0px rgba(80,82,94,0.5);
     display: inline-block;
 }
 .list {
@@ -217,6 +218,7 @@ nav {
     line-height: 27px;
     margin-right: 25px;
     color: #737a7d;
+	letter-spacing: -1.5px;
 }
 .sum {
 	float: right;
@@ -224,56 +226,60 @@ nav {
     line-height: 27px;
     margin-right: 75px;
     color: #737a7d;
+	letter-spacing: -1.5px;
 }
 .forms {
 	height: 135px;
-	width: 1000px;
-	margin: 10px auto;
+	width: 910px;
+	margin: 13px auto;
 	display: inline-block;
 }
 .left {
-	width: 415px;
-    height: 135px;
+	width: 411px;
+    height: 133px;
     float: left;
     border: 1px #b6b6b7 solid;
-    border-radius: 10px;
-    margin-left: 5px;
-    margin-right: 10px;
+    border-radius: 17px;
+    margin-left: 4px;
     box-shadow: 1px 1px 5px 0px rgba(173,173,174,0.75);
+	bor: ;
+	ar: ;
+	margin-right: 10px;
 }
 .middle {
-	height: 135px;
+	height: 134px;
 	width: 190px;
 	float: left;
 	border: 1px #b6b6b7 solid;
-    border-radius: 10px;
+    border-radius: 18px;
     margin-left: 5px;
-    margin-right: 10px;
+    margin-right: 6px;
     box-shadow: 1px 1px 5px 0px rgba(173,173,174,0.75);
 }
 .right {
-	height: 135px;
+	height: 134px;
 	width: 265px;
 	float: left;
 	border: 1px #b6b6b7 solid;
-    border-radius: 10px;
-    margin-left: 5px;
+    border-radius: 18px;
     margin-right: 5px;
     box-shadow: 1px 1px 5px 0px rgba(173,173,174,0.75);
+	bor: ;
+	margin-left: 5px;
 }
 .aleft {
 	display: block;
 	float: left;
 	height: 625px;
 	width: 180px;
-	margin: 20px 10px 30px 10px;
+	margin: 3px 10px 30px -2px;
 
 }
 .product {
     float: left;
-    height: 625px;
+    height: 627px;
     width: 525px;
-    margin: 20px 10px 30px 10px;
+    margin: 0px 10px 30px 2px;
     background: linear-gradient(to top, #93a7b0, #e4e7e8);
     border-radius: 5px;
 }
@@ -292,20 +298,30 @@ figure {
     border: 1px #a8b2b5 solid;
     border-radius: 5px;
     margin-bottom: 3px;
+	margin-left: 8px;
 }
 .shina img {
 	margin: 5px auto;
 }
 figure h6 {
 	color: #206988;
-	font-size: 14px;
+	font-size: 15px;
 	font-family: Lucida;
+	letter-spacing: 1px;
+	margin-left: 20px;
+	margin-bottom: -2px;
 }
 figure p {
 	color: black;
 	font-size: 13px;
 	font-family: Lucida;
-	margin-bottom: 2px;
+	margin-bottom: 0px;
+}
+.nthh6 {
+	margin-top: -5px;
+}
+.nthp {
+	margin-bottom: 4px
 }
 .price {
 	color: #114165;
@@ -313,14 +329,18 @@ figure p {
 	font-size: 16px;
 	font-weight: bold;
 	font-style: italic;
+	margin-left: 20px;
+}	
+.price span {
+	font-size: 14px;
 	/*margin-top: 5px;*/
 }
 .aright {
 	display: block;
 	float: left;
 	height: 625px;
-	width: 185px;
-	margin: 20px 10px 30px 10px;
+	width: 158px;
+	margin: 0px 0px 40px 0px;
 }
 .catalog {
 	height: 25px;
@@ -332,7 +352,7 @@ figure p {
     border: 1px solid #79878d;
     display: inline-block;
     box-shadow: 1px 3px 5px 0px rgba(191,191,191,1);
-    margin-bottom: 13px;
+    margin-bottom: 11px;
 }
 .catalog img {
 	float: left;
@@ -364,17 +384,19 @@ figure p {
 }
 #in {
 	list-style-image: url(../img/marker.png);
+	margin-bottom: 1px;
 }
 #in li {
 	font-size: 12px;
 	color: #465961;
 	font-family: Lucida;
-	margin-left: 35px;
+	margin-left: 52px;
 	border: none;
 	width: 140px;
 	line-height: 25px;
 	display: list-item;
-	margin-top: 1px;
+	margin-top: -1px;
+	letter-spacing: 1.5px;
 }
 #in li:hover {
 	font-style: italic;
@@ -385,7 +407,7 @@ figure p {
 }
 .br {
 	height: 25px;
-	width: 185px;
+	width: 181px;
     color: #114165;
     font-size: 12px;
     font-family: Lucida;
@@ -414,6 +436,8 @@ figure p {
 	font-size: 14px;
 	font-family: Lucida;
 	color: #114165;
+	margin-left: 14px;
+	margin-bottom: 2px;
 }
 .rname li img {
 	float: left;
@@ -427,9 +451,10 @@ figure p {
 	font-size: 12px;
 	color: #465961;
 	font-family: Lucida;
-	margin-left: 10px;
+	margin-left: 20px;
 	border: none;
 	width: 100px;
+	letter-spacing: 3px;
 }
 .aright button {
 	height: 25px;
@@ -441,19 +466,19 @@ figure p {
 	padding: 6px auto;
 	border-radius: 25px;
 	border: none;
-	margin: 20px 10px;
+	margin: 9px 25px;
 }
 .brend {
     height: 40px;
-    width: 1000px;
+    width: 910px;
     text-align: center;
     clear: both;
-    margin-bottom: 25px;
+    margin-bottom: 12px;
     margin-top: 20px;
 }
 footer {
 	height: 100px;
-	width: 1000px;
+	width: 909px;
 	background-color: #213a4d;
 	margin: 0px auto;
 	text-align: center;
@@ -461,7 +486,7 @@ footer {
 }
 .down {
 	display: inline-block;
-	margin: 15px auto;
+	margin: 12px auto;
 }
 .down li {
 	float: left;
@@ -469,7 +494,8 @@ footer {
 	color: #bec6c9;
 	font-family: Arial;
 	font-size: 12px;
-	padding-right: 15px;
+	padding-right: 7px;
+	letter-spacing: 0.5px;
 
 }
 .down li a {
