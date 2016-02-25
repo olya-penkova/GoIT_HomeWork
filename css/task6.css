@@ -84,9 +84,9 @@ header {
 	float: left;
 	background: #0d365a;
     background: linear-gradient(to top, #0d365a, #1f6685);
-    border-radius: 5px;
+    border-radius: 4px;
     margin-left: 23px;
-    box-shadow: 1px 1px 3px 0px rgba(180,180,180,0.75);
+    box-shadow: 2px 2px 3px 0px rgba(180,180,180,0.75);
 }
 .login.logbut {
 	display: inline-block;
@@ -177,7 +177,7 @@ nav {
 	background: #030303;
     background: linear-gradient(to top, #030303, #4d5663);
     border-radius: 5px;
-    box-shadow: 2px 3px 5px 0px rgba(80,82,94,0.5);
+    box-shadow: 3px 3px 5px 0px rgba(80,82,94,0.5);
     display: inline-block;
 }
 .list {
@@ -204,17 +204,18 @@ nav {
 	background: #0d3458;
 	background: linear-gradient(to top, #0d3458, #1f6787);
 	border-radius: 25px;
+	cursor: pointer;
 }
 .busket {
 	float: right;
 	line-height: 25px;
-	margin-right: 5px;
-	margin-top: 6px;
+	margin-right: 7px;
+	margin-top: 7px;
 }
 .prod {
 	float: right;
 	text-align: center;
-    line-height: 27px;
+    line-height: 31px;
     margin-right: 25px;
     color: #737a7d;
 	letter-spacing: -1.5px;
@@ -222,7 +223,7 @@ nav {
 .sum {
 	float: right;
 	text-align: center;
-    line-height: 27px;
+    line-height: 31px;
     margin-right: 75px;
     color: #737a7d;
 	letter-spacing: -1.5px;
@@ -290,6 +291,9 @@ figure {
     text-align: center;
     margin: 15px;
 }
+figure:hover {
+	cursor: pointer;
+}
 .shina {
 	height: 127px;
 	width: 137px;
@@ -308,13 +312,15 @@ figure h6 {
 	font-family: Lucida;
 	letter-spacing: 1px;
 	margin-left: 20px;
-	margin-bottom: -2px;
+	margin-bottom: 1px;
 }
 figure p {
 	color: black;
 	font-size: 13px;
 	font-family: Lucida;
 	margin-bottom: 0px;
+	margin-left: 15px;
+	letter-spacing: 0.7px;;
 }
 .nthh6 {
 	margin-top: -5px;
@@ -331,7 +337,7 @@ figure p {
 	margin-left: 20px;
 }	
 .price span {
-	font-size: 14px;
+	font-size: 12px;
 	/*margin-top: 5px;*/
 }
 .aright {
