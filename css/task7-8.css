@@ -1,0 +1,360 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.wrapper {
+	height: 2306px;
+	width: 2400px;
+	position: absolute;
+	box-sizing: border-box;
+}
+
+header {
+	height: 847px;
+	width: 100%;
+	background-image: url(../img/bg7-8.png);
+}
+
+.logo {
+	float: left;
+	margin: 51px 30px 166px 720px;
+}
+
+.menu {
+	float: right;
+	margin: 76px 596px 178px 20px;
+}
+
+.menu li {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.menu li a {
+	text-decoration: none;
+	color: white;
+	font-size: 24px;
+	font-family: LeagueGotic, Arial, sans-serif;
+}
+
+.container {
+	height: 400px;
+	width: 100%;
+	background-color: rgba(0,0,0,0.3);
+	clear: both;
+	display: inline-block;
+}
+
+.colomn {
+	height: 35px;
+	width: 25px;
+	background: url(../img/colomnsprite.png) -2px -3px no-repeat;
+	float: left;
+	margin: 182px 296px 184px 399px;
+}
+
+.text {
+	width: 500px;
+	height: 100%;
+	float: left;
+	margin-right: 115px;
+}
+
+.fone {
+	float: left;
+	margin-top: -17px;
+}
+
+.colomn--right {
+	height: 35px;
+	width: 25px;
+	background: url(../img/colomnsprite.png) -38px -3px no-repeat;
+	float: right;
+	margin-right: 398px;
+	margin-left: 0px;
+}
+
+.top {
+	height: 340px;
+	width: 100%;
+	background: linear-gradient(to top, #37283e, #745083);
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	clear: both;
+}
+
+.about {
+	color: white;
+	width: 280px;
+	display: inline-block;
+	margin-left: 778px;
+}
+.icon {
+	height: 25px;
+	width: 25px;
+	background: url(../img/aboutsprite.png) 0 0 no-repeat;
+}
+.icon--middle {
+	height: 25px;
+	width: 25px;
+	background: url(../img/aboutsprite.png) 27px 0 no-repeat;
+}
+.icon--right {
+	height: 25px;
+	width: 25px;
+	background: url(../img/aboutsprite.png) 54px 0 no-repeat;
+}
+.about h4 {
+	font-size: 30px;
+	font-family: LeagueGothic, Arial, sans-serif;
+	margin-top: 75px;
+}
+
+.about p {
+	font-size: 16px;
+	font-family: OpenSans, Arial, sans-serif;
+	line-height: 25px;
+}
+
+.about a {
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+	font-family: LeagueGothic, Arial, sans-serif;
+	float: right;
+	margin-top: 18px;
+}
+
+.about--middle {
+	margin-left: 55px
+}
+.about--right {
+	margin-left: 55px;
+}
+
+.middle {
+	height: 608px;
+	width: 100%;
+	background-color: white;
+}
+
+.bottom {
+	height: 395px;
+	width: 100%;
+	background-color: #ececec;
+}
+
+footer {
+	height: 115px;
+	width: 100%;
+	background-image: url(../img/bgfooter7-8.png);
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.wrapper {
+	/*position: relative;*/
+	height: 2306px;
+	width: 2400px;
+	position: absolute;
+	box-sizing: border-box;
+}
+header {
+height: 847px;;
+width: 100%;
+background-image: url(../img/bg7-8.png);
+/*background-repeat: no-repeat;*/
+}
+.logo {
+	float: left;
+	margin: 51px 30px 166px 720px;
+}
+.menu {
+	float: right;
+	margin: 76px 596px 178px 20px;
+	/*display: inline-block;*/
+}
+.menu li {
+	display: inline-block;
+	margin-right: 5px;
+}
+.menu li a {
+	text-decoration: none;
+	color: white;
+	font-size: 24px;
+	font-family: LeagueGotic, Arial, sans-serif;
+}
+.container {
+	height: 400px;
+	width: 100%;
+	background-color: rgba(0,0,0,0.3);
+	clear: both;
+	display: inline-block;;
+}
+.colomn {
+	height: 35px;
+	width: 25px;
+	background: url(../img/colomnsprite.png) -2px -3px no-repeat;
+	float: left;
+	margin: 182px 296px 184px 399px;
+}
+.text {
+	width: 500px;
+	height: 100%;
+	float: left;
+	margin-right: 115px;
+}
+.fone {
+	float: left;
+	margin-top: -17px;
+}
+.colomn--right {
+	height: 35px;
+	width: 25px;
+	background: url(../img/colomnsprite.png) -38px -3px no-repeat;
+	float: right;
+	margin-right: 398px;
+	margin-left: 0px;
+}
+.top {
+	height: 340px;
+	width: 100%;
+	background: linear-gradient(to top, #37283e, #745083);
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	clear: both;
+}
+.about {
+	color: white;
+	background: url(../img/aboutsprite.png) 0 0 no-repeat;
+	display: inline-block;
+	margin: auto 20px;
+	width: 280px;
+	background-size: 25px 25px;
+}
+.about h4 {
+	font-size: 30px;
+	font-family: LeagueGothic, Arial, sans-serif;
+	margin-top: 73px;
+}
+.about p {
+	font-size: 16px;
+	font-family: OpenSans, Arial, sans-serif;
+	line-height: 25px;
+}
+.about a {
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+	font-family: LeagueGothic, Arial, sans-serif;
+	float: right;
+	margin-top: 12px;
+}
+.about--middle {
+	margin-left: 55px;
+
+}
+.about--right {
+	margin-left: 55px;
+}
+.middle {
+	height: 608px;
+	width: 100%;
+	background-color: white;
+}
+.bottom {
+	height: 395px;
+	width: 100%;
+	background-color: #ececec;
+}
+footer {
+height: 115px;
+width: 100%;
+background-image: url(../img/bgfooter7-8.png);
+}
+	
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}

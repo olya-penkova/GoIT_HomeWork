@@ -65,18 +65,18 @@ header {
 }
 .top li {
     display: -moz-inline-stack!important;
-    zoom:1;
     line-height: 25px;
 	text-align:center;
+    zoom: 1;
     letter-spacing: 1px;
 }
 .fone {
-	width: 290px;
 	height: 25px;
 	float: left;
 	font-size: 18px;
 	color:  #5e696d;
 	font-family:  Arial;
+	width: 300px;
 }
 .login {
 	width: 495px;
@@ -85,7 +85,7 @@ header {
 	background: #0d365a;
     background: linear-gradient(to top, #0d365a, #1f6685);
     border-radius: 4px;
-    margin-left: 23px;
+    margin-left: 13px;
     box-shadow: 2px 2px 3px 0px rgba(180,180,180,0.75);
 }
 .login.logbut {
@@ -491,6 +491,7 @@ figure p {
 	border-radius: 25px;
 	border: none;
 	margin: 9px 25px;
+	cursor: pointer;
 }
 .brend {
     height: 40px;
