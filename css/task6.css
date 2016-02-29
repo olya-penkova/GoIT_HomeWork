@@ -224,6 +224,7 @@ nav {
 	font-size: 12px;
 	font-family: Arial;
 	color: #0d5a8f;
+	letter-spacing: 1px;
 }
 .sum {
 	float: right;
@@ -237,6 +238,7 @@ nav {
 	font-size: 12px;
 	font-family: Arial;
 	color: #0d5a8f;
+	letter-spacing: 1px;
 }
 .forms {
 	height: 135px;
