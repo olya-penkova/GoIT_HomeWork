@@ -220,13 +220,23 @@ nav {
     color: #737a7d;
 	letter-spacing: -1.5px;
 }
+.prod span {
+	font-size: 12px;
+	font-family: Arial;
+	color: #0d5a8f;
+}
 .sum {
 	float: right;
 	text-align: center;
     line-height: 31px;
-    margin-right: 75px;
+    margin-right: 38px;
     color: #737a7d;
 	letter-spacing: -1.5px;
+}
+.sum span {
+	font-size: 12px;
+	font-family: Arial;
+	color: #0d5a8f;
 }
 .forms {
 	height: 135px;
@@ -309,7 +319,7 @@ figure:hover {
 figure h6 {
 	color: #206988;
 	font-size: 15px;
-	font-family: Lucida;
+	font-family: Lucida, Arial, sans-serif;
 	letter-spacing: 1px;
 	margin-left: 20px;
 	margin-bottom: 1px;
@@ -317,7 +327,7 @@ figure h6 {
 figure p {
 	color: black;
 	font-size: 13px;
-	font-family: Lucida;
+	font-family: Lucida, Arial, sans-serif;
 	margin-bottom: 0px;
 	margin-left: 15px;
 	letter-spacing: 0.7px;;
@@ -385,7 +395,7 @@ figure p {
 }
 .lname li p {
 	float: left;
-	margin-top: 5px;
+	line-height: 26px;
 }
 #in {
 	list-style-image: url(../img/marker.png);
@@ -409,6 +419,7 @@ figure p {
 	text-decoration: underline;
 	font-size: 14px;
 	list-style-image: url(../img/hovmarker.png);
+	cursor: pointer;
 }
 .br {
 	height: 25px;
@@ -433,7 +444,7 @@ figure p {
 	margin: 6px;
 }
 .rname li {
-	height: 25px;
+	height: 24px;
 	width: 135px;
 	border: 1px solid #79878d;
 	border-radius: 20px;
@@ -460,6 +471,12 @@ figure p {
 	border: none;
 	width: 100px;
 	letter-spacing: 3px;
+}
+#rin li input {
+	vertical-align: middle;
+}
+#rin li label {
+	vertical-align: middle;
 }
 .aright button {
 	height: 25px;
