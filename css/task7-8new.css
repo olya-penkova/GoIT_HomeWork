@@ -67,7 +67,7 @@ table {
 
 .wrapper {
 	height: 2295px;
-	/*width: 2400px;*/
+	width: 100%;
 	box-sizing: border-box;
 }
 
@@ -84,7 +84,7 @@ table {
 	display: inline-block;
 }
 .container-logo-menu {
-	width: 100%;
+	max-width: 960px;
 	margin: 0 auto;
 	padding-top: 40px;
 	padding-left: 6px;
@@ -141,7 +141,7 @@ table {
     .menu {
 	float: left;
 	display: inline-block;
-	margin-left: 17%;
+	margin-left: 153px;
 	margin-top: 22px;
 }
 .menu li {
@@ -309,6 +309,7 @@ table {
 }
 .container_item {
 margin: 0 auto;
+width: 960px;
 height: 100%;
 }
 }
@@ -669,6 +670,7 @@ margin: 0 auto;
 }
 .top_item {
 	height: 100%;
+	width: 960px;
 	margin: 0 auto;
 }
 }
@@ -997,6 +999,7 @@ margin: 0 auto;
 }
 .middle_item {
     margin: 0 auto;
+    width: 960px;
 	}
 }
 @media (min-width: 321px) and (max-width: 480px){
@@ -1607,6 +1610,7 @@ margin: 0 auto;
 .bottom_item {
 	margin: 0 auto;
 	height: 100%;
+	width: 960px;
 }
 
 .bottext {
@@ -1794,6 +1798,7 @@ footer {
 }
 .container-menu-address {
 	margin: 0 auto;
+	width: 960px;
 	height: 100%;
 }
 .menu--foot {
