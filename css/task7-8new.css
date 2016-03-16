@@ -12,6 +12,7 @@ figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
+	-moz-padding: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
@@ -112,6 +113,7 @@ table {
 .logo {
 	display: block;
 	text-align: center;
+	-moz-padding-top: 51px;
 	padding-top: 51px;
 }
 .wrapper {
@@ -125,6 +127,7 @@ table {
 	width: 100%;
 	background-image: url(../img/bg7-8.png);
 	background-position: top center;
+	-moz-padding-top: 50px;
 	padding-top: 50px;
 }
 	.logo {
@@ -146,6 +149,8 @@ table {
 	display: inline-block;
 	margin-right: 35px;
 	margin-left: 5px;
+	-moz-padding-left:5px;
+	-moz-padding-right: 5px;
 	padding-left: 5px;
 	padding-right: 5px;
 }
@@ -172,6 +177,8 @@ table {
 	display: inline-block;
 	margin-right: 35px;
 	margin-left: 5px;
+	-moz-padding-left: 5px;
+	-moz-padding-right: 5px;
 	padding-left: 5px;
 	padding-right: 5px;
 }
@@ -234,12 +241,14 @@ table {
 	border-top: 1px solid #503d58;
 	border-bottom: 1px solid #36283e;
 	margin-top: 1px;
+	-moz-padding-top: 14px;
 	padding-top: 14px;
 	float: none;
 	z-index: 33;
 }
 
 .menu480_item li a {
+	-moz-white-space: nowrap;
 	white-space: nowrap;
 	display: block;
 	text-decoration: none;
@@ -248,6 +257,7 @@ table {
 	font-size: 24px;
 	font-family: 'league_gothicregular', Arial, sans-serif;
 	margin: 0px auto;
+	-moz-padding: 0px;
 	padding: 0px;
 	margin-top: 0px;
 }
@@ -573,6 +583,7 @@ table {
 }
 
 .rounds_item--select {
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	background-color: white;
 	border: 2px solid rgba(0,0,0,0.3);
@@ -595,6 +606,7 @@ table {
 }
 
 .rounds_item--select {
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	background-color: white;
 	border: 2px solid rgba(0,0,0,0.3);
@@ -617,6 +629,7 @@ table {
 }
 
 .rounds_item--select {
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	background-color: white;
 	border: 2px solid rgba(0,0,0,0.3);
@@ -639,6 +652,7 @@ table {
 }
 
 .rounds_item--select {
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	background-color: white;
 	border: 2px solid rgba(0,0,0,0.3);
@@ -970,6 +984,7 @@ table {
 	height: 509px;
 	width: 100%;
 	background-color: #f9f9f9;
+	-moz-padding-top: 99px;
 	padding-top: 99px;
 }
 }
@@ -985,6 +1000,7 @@ table {
 	height: 951px;
 	width: 100%;
 	background-color: #f9f9f9;
+	-moz-padding-top: 69px;
 	padding-top: 69px;
 }
 }
@@ -993,6 +1009,7 @@ table {
 	height: 1158px;
 	width: 100%;
 	background-color: #f9f9f9;
+	-moz-padding-top: 50px;
 	padding-top: 50px;
 }
 }
@@ -1305,7 +1322,8 @@ table {
 	width: 385px;
 	display: block;
 	margin-left: 83px;
-	white-space: nowrap;;
+	-moz-white-space: nowrap;
+	white-space: nowrap;
 }
 
 .blog h4 {
@@ -1333,6 +1351,7 @@ table {
 	letter-spacing: -0.5px;
 	width: 267px;
 	overflow: hidden;
+	-moz-white-space: nowrap;
 	white-space: nowrap;
 }
 
@@ -1453,6 +1472,7 @@ table {
 
 .rounds--bottom .rounds_item {
 	background-color: white;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	border: 1px solid grey;
 }
@@ -1462,6 +1482,7 @@ table {
 	width: 15px;
 	border-radius: 100%;
 	background-color: rgba(0,0,0,3);
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	display: inline-block;
 	margin: 1px;
@@ -1476,6 +1497,7 @@ table {
 
 .rounds--bottom .rounds_item {
 	background-color: white;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	border: 1px solid grey;
 }
@@ -1485,6 +1507,7 @@ table {
 	width: 15px;
 	border-radius: 100%;
 	background-color: rgba(0,0,0,3);
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	display: inline-block;
 	margin: 1px;
@@ -1499,6 +1522,7 @@ table {
 
 .rounds--bottom .rounds_item {
 	background-color: white;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	border: 1px solid grey;
 }
@@ -1508,6 +1532,7 @@ table {
 	width: 15px;
 	border-radius: 100%;
 	background-color: rgba(0,0,0,3);
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	display: inline-block;
 	margin: 1px;
@@ -1521,6 +1546,7 @@ table {
 
 .rounds--bottom .rounds_item {
 	background-color: white;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	border: 1px solid grey;
 }
@@ -1530,6 +1556,7 @@ table {
 	width: 15px;
 	border-radius: 100%;
 	background-color: rgba(0,0,0,3);
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	display: inline-block;
 	margin: 1px;
@@ -1580,6 +1607,7 @@ table {
 	background-repeat: no-repeat;
 	background-position: center;
 	border-top: 1px solid #e6e6e6;
+	-moz-padding-top: -14px;
 	padding-top: -14px;
 }
 }
@@ -1614,6 +1642,7 @@ table {
 
 .bottom {
 	height: 582px;
+	-moz-padding-top: 86px;
 	padding-top: 86px;
 }
 .bottext {
@@ -1910,6 +1939,7 @@ address span {
 	background-image: url(../img/bgfooter7-8.png);
 	background-repeat: no-repeat;
 	background-size: cover;
+	-moz-padding-top: 44px;
 	padding-top: 44px;
 }
 .menu--foot {
