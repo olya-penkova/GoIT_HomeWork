@@ -57,8 +57,8 @@ table {
     header {
 	height: 827px;
 	width: 100%;
-	background: url(../img/bg7-8.gif);
-	background-repeat: no-repeat;
+	display: block;
+	background: url(../img/bg7-8.png) no-repeat;
 	background-position: center;
 }
 .wrapper {
@@ -75,11 +75,13 @@ table {
 	display: inline-block;
 	margin-left: 58px;
 	margin-top: 55px;
+	margin-bottom: 165px;
 }
 .menu li {
 	display: inline-block;
 	margin-right: 35px;
 	margin-left: 5px;
+	float: left;
 	-moz-padding-left:5px;
 	-moz-padding-right: 5px;
 	padding-left: 5px;
@@ -108,7 +110,7 @@ table {
 	background: url(../img/container.png) no-repeat;
 	clear: both;
 	display: inline-block;
-	margin-top: 165px;
+	margin-top: 0px;
 }
 
 .colomn {
@@ -155,6 +157,7 @@ table {
 }
 
 .colomn--right {
+	display: none;
 	height: 35px;
 	width: 25px;
 	background: url(../img/colomnsprite.png) -38px -3px no-repeat;
@@ -192,6 +195,7 @@ table {
 	color: white;
 	width: 280px;
 	display: inline-block;
+	float: left;
 	margin-left: 8px;
 	margin-top: 77px;
 }
@@ -247,6 +251,7 @@ table {
 }
 
 .about--middle {
+	display: inline-block;
 	margin-left: 55px;
 }
 
@@ -394,6 +399,7 @@ table {
 	width: 273px;
 	display: inline-block;
 	overflow: hidden;
+	float: left;
 	margin: 94px 56px 50px 0px;
 }
 

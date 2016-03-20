@@ -86,7 +86,7 @@ table {
 }
 @media (min-width: 768px) and (max-width: 959px) {
 	header {
-	height: 760px;
+	height: 737px;
 	width: 100%;
 	background-image: url(../img/bg7-8.png);
 	background-position: center;
@@ -142,7 +142,7 @@ table {
     .menu {
 	float: left;
 	display: inline-block;
-	margin-left: 158px;
+	margin-left: 139px;
 	margin-top: 55px;
 }
 .menu li {
@@ -194,18 +194,13 @@ table {
 	font-family: 'league_gothicregular', Arial, sans-serif;
 }
 }
-@media (max-width: 767px) {
-    .menu {
-	display: none;
-}
-}
 @media (min-width: 768px) {
 	.menu480 {
 		display: none;
 	}
 }
 
-@media (max-width: 767px) {
+@media (min-width: 480px) and (max-width: 767px) {
 	.menu480 {
 	display: block;
 	position: relative;
@@ -229,10 +224,10 @@ table {
 	background-color: rgba(63, 50, 72, 0.5);
 	border-radius: 15px;
 	top: 19px;
-	left: 110px;
 	width: 245px;
 	text-align: center;
 	z-index: 22;
+	left: 110px;
 }
 .menu480_item li {
 	display: block;
@@ -287,6 +282,75 @@ table {
 	position: relative;
 	margin-top: 33px;
 	}
+	.menu480 li {
+		float: none;
+		z-index: 33;
+		text-align: center;
+	}
+	.menu480 li a {
+		text-decoration: none;
+		color: white;
+		font-size: 24px;
+	    font-family: 'league_gothicregular', Arial, sans-serif;
+	}
+
+.menu480_item {
+	display: none;
+	position: absolute;
+	background-color: rgba(63, 50, 72, 0.5);
+	border-radius: 15px;
+	top: 19px;
+	width: 245px;
+	text-align: center;
+	z-index: 22;
+	left: 38px;
+}
+.menu480_item li {
+	display: block;
+	text-align: center;
+	font-size: 24px;
+	border-top: 1px solid #503d58;
+	border-bottom: 1px solid #36283e;
+	margin-top: 1px;
+	-moz-padding-top: 14px;
+	padding-top: 14px;
+	float: none;
+	z-index: 33;
+}
+
+.menu480_item li a {
+	-moz-white-space: nowrap;
+	white-space: nowrap;
+	display: block;
+	text-decoration: none;
+	color: white;
+	width: 100%;
+	font-size: 24px;
+	font-family: 'league_gothicregular', Arial, sans-serif;
+	margin: 0px auto;
+	-moz-padding: 0px;
+	padding: 0px;
+	margin-top: 0px;
+}
+
+.menu480 li:hover .menu480_item {
+	display: block;
+}
+
+.menu480 li:hover .menu480_item li {
+	background-color: rgba(63, 50, 72, 0.5);
+    text-decoration:none;
+}
+.menu480 li .menu480_item li:first-child:hover{
+      border-radius: 15px 15px 0 0;
+    }
+    .menu480 li .menu480_item li:last-child:hover{
+      border-radius: 0 0 15px 15px;
+    }
+.menu480 li:hover .menu480_item li:hover {
+	background-color: rgba(63, 50, 72, 0.85);
+	border-bottom: 2px solid #edbfff;
+}
 }	
 @media (min-width: 960px) {
 .container-colomn-text-fone {
@@ -530,10 +594,10 @@ table {
 	height: 35px;
 	width: 25px;
 	background: url(../img/colomnsprite.png) -38px -3px no-repeat;
-	float: right;
+	float: left;
 	margin-top: 182px;
-	margin-left: 0px;
-	margin-right: -318px;
+	margin-left: 28px;
+	display: none;
 }
 }
 @media (min-width: 768px) and (max-width: 959px) {
@@ -662,6 +726,8 @@ table {
 	.top {
 	height: 340px;
 	width: 100%;
+	background: -o-linear-gradient (top, #745083, #37283e);
+	background: -moz-linear-gradient(top, #745083, #37283e);
 	background: linear-gradient(to top, #37283e, #745083);
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
@@ -672,6 +738,8 @@ table {
 	.top {
 	height: 597px;
 	width: 100%;
+	background: -o-linear-gradient (top, #745083, #37283e);
+	background: -moz-linear-gradient(top, #745083, #37283e);
 	background: linear-gradient(to top, #37283e, #745083);
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
@@ -683,8 +751,8 @@ table {
 	color: white;
 	width: 280px;
 	display: inline-block;
-	margin-left: 8px;
 	margin-top: 77px;
+	margin-left: -2px;
 }
 
 .icon {
@@ -738,11 +806,11 @@ table {
 }
 
 .about--middle {
-	margin-left: 55px;
+	margin-left: 52px;
 }
 
 .about--right {
-	margin-left: 49px;
+	margin-left: 45px;
 }
 }
 @media (min-width: 768px) and (max-width: 959px) {
@@ -753,7 +821,7 @@ table {
 	height: 70%;
 	overflow: hidden;
 	margin-top: 78px;
-	margin-left: 34px;
+	margin-left: 22px;
 }
 
 .icon {
@@ -1059,7 +1127,7 @@ table {
 	background-repeat: no-repeat;
 	display: inline-block;
 	float: left;
-	margin-left: 45px;
+	margin-left: 35px;
 	margin-top: 100px;
 	margin-bottom: 23px;
 }
@@ -1248,12 +1316,11 @@ table {
 @media (min-width: 768px) and (max-width: 959px) {
 	.blog {
 	height: 290px;
-	width: 350px;
 	display: inline-block;
-	margin: 0px 0px 0px 58px;
+	margin: 100px 0px -28px 53px;
 	float: left;
-	margin-bottom: -28px;
 	margin-top: 100px;
+	width: 350px;
 }
 
 .blog h4 {
@@ -1491,7 +1558,7 @@ table {
 @media (min-width: 768px) and (max-width: 959px) {
 	.rounds--bottom {
 	float: none;
-	margin: 4px 0px 0px 162px;
+	margin: 4px 0px 0px 149px;
 	clear: left;
 }
 
@@ -1584,12 +1651,12 @@ table {
 	clear: both;
 	text-align: center;
 	height: 232px;
-	width: 362px;
-	border-bottom: 1px solid #e6e6e6;
 	background-image: url(../img/brends480.png);
 	margin: 61px auto 0px auto;
 	background-repeat: no-repeat;
 	background-position: center;
+	border-bottom: 1px solid #e6e6e6;
+	border-top: 1px solid #e6e6e6;
 }
 }
 @media (max-width: 479px) {
@@ -1622,7 +1689,7 @@ table {
 	width: 273px;
 	display: inline-block;
 	overflow: hidden;
-	margin: 94px 56px 50px 0px;
+	margin: 92px 50px 50px 0px;
 }
 }
 @media (min-width: 768px) and (max-width: 959px) {
@@ -1634,7 +1701,7 @@ table {
 .bottext {;
 	width: 215px;
 	display: inline-block;;
-	margin: 88px 56px 0px 20px;;
+	margin: 88px 42px 0px 20px;;
 	float: left;
 }
 }
@@ -1957,4 +2024,7 @@ address {
 address span {
 	font-weight: bold;
 }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
 }
