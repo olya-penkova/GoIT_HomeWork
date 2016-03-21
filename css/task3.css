@@ -43,7 +43,7 @@ table {
 }
 body {
      background-image: url(img/backline.png);
-  background-repeat: repeat-x
+  background-repeat: repeat-x;
   }
 .wrapper{
   width: 1280px;

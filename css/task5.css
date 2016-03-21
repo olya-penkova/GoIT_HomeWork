@@ -210,6 +210,7 @@ padding: 0px;
 	border: 0px;
 	border-radius: 7%;
 	background-repeat: no-repeat;
+	cursor: pointer;
 }
 hr {
 	size: 1px;
