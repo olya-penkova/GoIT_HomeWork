@@ -1,4 +1,4 @@
-/*var x= prompt ('x = ', '');
+var x= prompt ('x = ', '');
 var y= prompt ('y = ', '');
 
 if ( isNaN(x) ) {
@@ -28,6 +28,4 @@ function pow(x, y) {
 	for(var i=0;i<y;i++) 
 		result*=x;
     return result;
-}*/
-var result = 5 + '5' - 0;
-console.log(result);
+}
