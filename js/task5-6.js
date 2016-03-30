@@ -31,27 +31,27 @@ function startStop() {
 function mlSecStart() {
      mlSecondsID = setInterval(
         function () {
-    mlSeconds.innerHTML = ml;
-    ml = (ml +1) % 1000;
+            ml = (ml + 1) % 1000;
+            mlSeconds.innerHTML = ml;
 }, 1);
 
      sId = setInterval(
         function() {
+            s = (s + 1) % 60;
             time.innerHTML = lpad(h,'0',2) + ':' + lpad(m,'0',2) + ':' + lpad(s,'0',2);     
-            s = (s +1) % 60;
     }, 1000);
      
      
      mId = setInterval(
         function() {
+             m = (m + 1) % 60;
             time.innerHTML = lpad(h,'0',2) + ':' + lpad(m,'0',2) + ':' + lpad(s,'0',2);
-            m = (m + 1) % 60;
         }, 60000);
      
      hId = setInterval(
         function() {
-            time.innerHTML = lpad(h,'0',2) + ':' + lpad(m,'0',2) + ':' + lpad(s,'0',2);
             h = (h +1) % 24;
+            time.innerHTML = lpad(h,'0',2) + ':' + lpad(m,'0',2) + ':' + lpad(s,'0',2);
         }, 3600000);
 }
 
@@ -93,12 +93,13 @@ function clearTime() {
     mlSeconds.innerHTML = ml;
 } 
 
-start.addEventListener("click", startStop);
 start.addEventListener("click", mlSecStart);
-stop.addEventListener("click", stopCont);
+start.addEventListener("click", startStop);
 stop.addEventListener("click", timeStop);
-cont.addEventListener("click", contStop);
+stop.addEventListener("click", stopCont);
 cont.addEventListener("click", mlSecStart);
-clear.addEventListener("click", contStart);
+cont.addEventListener("click", contStop);
 clear.addEventListener("click", clearTime);
+clear.addEventListener("click", contStart);
+
 
