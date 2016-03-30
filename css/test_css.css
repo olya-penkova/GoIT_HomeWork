@@ -1,0 +1,159 @@
+@font-face {
+    font-family: 'tff_franklin_gothic_demi';
+    src: url('../fonts/tff_franklin_gothic_demi-webfont.eot');
+    src: url('../fonts/tff_franklin_gothic_demi-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/tff_franklin_gothic_demi-webfont.woff2') format('woff2'),
+         url('../fonts/tff_franklin_gothic_demi-webfont.woff') format('woff'),
+         url('../fonts/tff_franklin_gothic_demi-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.navbar {
+	height: 80px;
+	margin-bottom: 0;
+
+
+}
+.navbar-inner {
+	background-color: white;
+	background-image: none;
+	border: none;
+}
+.navbar .brand {
+	padding-top: 0;
+}
+.brand img {
+	height: 80px;
+	margin-top: 0;
+}
+.navbar .nav {
+	margin-top: 20px;
+	color: #565656;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+.navbar .nav li a:hover {
+	color: #000047;
+	font-weight: 400;
+}
+.foto {
+	height: 680px;
+	width: 100%;
+	background: url(../img/test_back.png) 0 0 no-repeat;
+	background-position: center;
+	position: relative;
+}
+.btn--play {
+	height: 80px;
+	width: 60px;
+	/*position: absolute;*/
+	margin-top: 45%;
+	margin-left: 5%;
+	background-image: url(../img/test_play.png);
+	background-repeat: no-repeat;
+	background-position: center center; 
+	border: none;
+	background-color: #333433;
+	border-radius: 100%;
+	-webkit-box-shadow: 0px 0px 10px 4px rgba(51,52,51,1);
+    -moz-box-shadow: 0px 0px 10px 4px rgba(51,52,51,1);
+    box-shadow: 0px 0px 10px 4px rgba(51,52,51,1);
+}
+.btn--play:hover {
+	background-image: url(../img/test_play.png);
+	background-repeat: no-repeat;
+	background-position: center center; 
+	/*background-color: #333433;*/
+}
+.about {
+	height: 85px;
+	width: 430px;
+	margin: 30px auto;
+	text-align: center;
+	font-family: 'Franklin Gothic Demi', sans-serif;
+	font-size: 26px;
+	border: 1px solid black;
+}
+.about img {
+	display: block;
+	margin: -10px auto;
+}
+.about p{
+	display: block;
+	margin: 25px auto;
+	margin-bottom: 0;
+}
+article {
+	text-align: center;
+}
+.story {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 16px;
+	text-align: justify;
+}
+.podrobnee {
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+	font-weight: 500;
+	color: #000047;
+	text-transform: uppercase; 
+}
+.podrobnee:hover {
+    color: #000047;
+    text-decoration: none;
+    font-weight: 400;	
+}
+.career {
+	display: block;
+	text-align: center;
+    margin-top: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.career > span {
+        position: relative;
+        display: inline-block;
+    }
+	
+    .career > span:before,
+    .career > span:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        width: 90px;
+        height: 1px;
+        background: black;
+    }
+
+    .career > span:before {
+        right: 100%;
+        margin-right: 15px;
+    }
+
+    .career > span:after {
+        left: 100%;
+        margin-left: 15px;
+    }
+.career span {
+	font-family: 'Franklin Gothic Demi', sans-serif;
+	font-size: 20px;
+	letter-spacing: 2px;
+	width: 170px;
+	
+
+}
+.map {
+	height: 320px;
+	width: 100%;
+	margin-top: 50px;
+	background: url(../img/test_career.png);
+	background-repeat: no-repeat;
+	
+	/*background-size: 100%;*/
+}
+.map_content {
+	display: inline-block;
+	width: 295px;
+	height: 100px;
+}

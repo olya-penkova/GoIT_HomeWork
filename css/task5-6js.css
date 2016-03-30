@@ -1,0 +1,45 @@
+.container {
+	margin: 20% auto;
+	display: block;
+	text-align: center;
+}
+.time {
+	font-size: 40px;
+}
+
+.container {
+	margin: 20% auto;
+	display: block;
+	text-align: center;
+}
+
+.time {
+	font-size: 40px;
+}
+.start {
+	width: 20%;
+	height: 40px;
+	margin-right: 40px;
+	font-size: 20px;
+}
+.stop {
+	width: 20%;
+	height: 40px;
+	margin-right: 40px;
+	font-size: 20px;
+	display: none;
+}
+
+.cont {
+	display: none;
+	width: 20%;
+	height: 40px;
+	margin-right: 40px;
+	font-size: 20px;
+}
+.clear {
+	width: 20%;
+	height: 40px;
+	/*margin-right: 40px;*/
+	font-size: 20px;
+}
