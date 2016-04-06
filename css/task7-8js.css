@@ -69,14 +69,15 @@ span {
 }
 .tip {
 	position: absolute;
-	z-index: 1;
-	width: 20%;
+	z-index: 11;
+	width: 250px;
 	font-size: 14px;
-	margin-left: 400px;
+	margin-left: 5%;
 	border: 1px solid grey;
 	text-align: center;
 	box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
-	display: none;
+	opacity: 0;
+	visibility: hidden;
 }
 button {
 	width: 15%;
