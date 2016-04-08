@@ -1,0 +1,197 @@
+body {
+	background: url(http://www.rabstol.net/uploads/gallery/main/147/rabstol_net_grass_18.jpg);
+}
+.container {
+	margin: 0 auto;
+	font-family: Tahoma, sans-serif;
+}
+.jcarousel {
+	position: relative;
+	overflow: hidden;
+	margin: 5% auto;
+	width: 300px;
+	height: 300px;
+}
+.jcarousel ul {
+	width: 20000em;
+	position: relative;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+.jcarousel li {
+	float: left;
+	width: 300px;
+}
+.jcarousel li img {
+	height: 100%;
+	width: 100%;
+	border-radius: 10px;
+}
+.jcarousel-prev{
+	background: url(../img/colomnsprite.png) 0 0 no-repeat;
+	background-size: 35px;
+    width: 15px;
+    height: 30px;
+    display: inline-block; 
+    float: left;
+}
+.jcarousel-next{
+	background: url(../img/colomnsprite.png) -20px 0px no-repeat;
+	background-size: 35px;
+    width: 15px;
+    height: 30px;
+    display: inline-block;
+    margin-left: 94px;
+    float: left;
+}
+.jcarousel-pagination {
+	letter-spacing: 5px;
+	display: inline-block;
+	float: left;
+	margin-left: 100px;
+}
+.jcarousel-pagination a {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+.checks {
+	margin: 0 auto;
+	text-align: center;
+}
+.jqery_chek {
+	display: inline-block;
+	margin-left: 5%;
+	margin-bottom: 5%;
+	width: 30%;
+}
+.css_chek {
+	display: inline-block;
+	margin-left: 5%;
+	width: 30%;
+}
+.niceCheck {
+	height: 17px;
+	width: 17px;
+	margin-left: 3px;
+	margin-top: 3px;
+	vertical-align: middle;
+	display: inline-block;
+	cursor: pointer;
+	background: url(../img/customCheck.png) 0 0 no-repeat;
+}
+.niceCheck input {
+    display: none;
+}
+.check {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+}
+.css_label {
+	cursor: pointer;
+	display: inline-block;
+	width: 200px;
+}
+.css_label:after {
+	content: "";
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	background: url(../img/customCheck.png) 0 0 no-repeat;
+	position: relative;
+	margin-left: 3px;
+	margin-top: 3px;
+	vertical-align: middle;
+}
+.check:checked+.css_label:after {
+	background: url(../img/customCheck.png) 0 -17px no-repeat;
+}
+.check:disabled+.css_label:after {
+	background: url(../img/customCheckDisabled.png) 0 -17px no-repeat;
+}
+#webmenu {
+	width: 20%;
+	position: relative;
+	display: block;
+	margin-left: 100px;
+}
+nav {
+    background-color: #08980b;
+    padding:10px 0;
+    margin-top: 5%;
+}
+nav ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+nav ul li {
+    display: inline-block;
+    position:relative;
+}
+nav li ul {    
+    background-color:#088b0a;
+    position:absolute;
+    left:0;
+    top:50px; /* make this equal to the line-height of the links (specified below) */
+    width:150px;
+}
+/*.submenu {
+	background-color:#088b0a;
+	}*/
+nav li li {
+    position:relative;
+    margin:0;
+    display:block;
+}
+nav li li ul {
+    position:absolute;
+    top:0;
+    left:150px; /* make this equal to the width of the sub nav above */
+    margin:0;
+}
+nav a {
+    line-height:40px;
+    padding:0 12px;
+    margin:0 12px;
+}
+nav a {
+    color:#fff;
+    text-decoration:none;
+    display:block;
+}
+nav a:hover,
+nav a:focus,
+nav a:active {
+    color:rgb(50,50,50);
+}
+
+/* style sub level links */
+nav li li a {
+    border-bottom:solid 1px #066b08;
+    margin:0 10px;
+    padding:0;
+}
+nav li li:last-child a {
+    border-bottom:none;
+}
+
+/* show arrows for dropdowns */
+nav li.dropdown > a {
+    background-image:url('../img/chevron-down-512px.svg');
+    background-size: 12px; 
+    background-position:right 0px top 20px; 
+    background-repeat:no-repeat;
+}
+
+nav li li.dropdown > a {
+    background-image:url('../img/chevron-right-512px.svg');
+    background-size: 6px; 
+    background-position:right 14px;
+    background-repeat:no-repeat;
+}
+ul .submenu {
+    display:none;
+}
