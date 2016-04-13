@@ -1,0 +1,40 @@
+.carousel-list {
+	list-style: none;
+	width: 10000px;
+	padding: 0px;
+	position: relative;
+}
+.carousel-element {
+	display: inline;
+	float: left;
+	margin-right: 25px;
+}
+.carousel-element img {
+	max-width: 100px;
+	height: 70px;
+}
+.carousel-wrapper {
+	width: 345px;
+	overflow: hidden;
+	float: left;
+}
+.carousel-arrow-left, .carousel-arrow-right {
+	float: left;
+	display: block;
+	border: 1px solid yellow;
+	background-color: lightyellow;
+	padding: 5px;
+	margin-top: 50px;
+}
+.carousel-arrow-left:hover, .carousel-arrow-right:hover {
+    cursor: pointer;
+    background-color: yellow;
+}
+ 
+.carousel-arrow-left {
+    margin-right: 25px;
+}
+ 
+.carousel-arrow-right {
+    margin-left: 25px;
+}
