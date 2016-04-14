@@ -1,3 +1,6 @@
+body {
+	background-color: #e7e5e5;
+}
 .carousel-list {
 	list-style: none;
 	width: 10000px;
@@ -37,4 +40,29 @@
  
 .carousel-arrow-right {
     margin-left: 25px;
+}
+hr{
+	text-align: center;
+	color: #9dc4b1;
+	width: 80%;
+}
+.foto{
+	margin: 0% 40% 0% 30%;
+	border-radius: 5px;
+    width:35%;
+}
+p{
+	padding-left: 10%;
+}
+h1 {
+	padding-left: 15%;
+	margin-top: 0px;
+}
+.little{
+	background-color: white;
+	margin: 1% 20% 10% 40%;
+	height: 70%;
+	width: 50%;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+    padding: 10px;
 }

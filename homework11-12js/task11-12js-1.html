@@ -26,8 +26,26 @@
 </div>
 <div class="carousel-arrow-right"><span>Вправо</span></div>
 
+<!--1е дз с помощью шаблонизатора-->
+
 <script type="text/tamplate" id="task">
-	<%= foto %>
+<div class="little">
+
+<h1><%= data[0].title %></h1>
+<img class="foto" src="<%= data[0].content %>" alt="foto">
+
+<% for (var i = 1; i < data.length; i++) { %>
+     
+	<p><%= data[i].title %></p>
+	<ul>
+	<%= data[i].content[i].forEach(function (item) { %>
+    <li><%- item %></li>
+    <% }); %>
+	</ul>
+	<hr>
+   
+<% }; %>
+</div>
 </script>
 
 </body>
