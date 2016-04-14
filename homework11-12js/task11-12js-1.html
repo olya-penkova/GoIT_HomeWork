@@ -38,9 +38,9 @@
      
 	<p><%= data[i].title %></p>
 	<ul>
-	<%= data[i].content[i].forEach(function (item) { %>
-    <li><%- item %></li>
-    <% }); %>
+	<% for (var j = 0; j < data[i].content.length; j++) { %>
+    <li><%= data[i].content[j] %></li>
+    <% }; %>
 	</ul>
 	<hr>
    
