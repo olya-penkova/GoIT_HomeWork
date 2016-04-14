@@ -1,23 +1,41 @@
 body {
 	background-color: #e7e5e5;
 }
+.carousel {
+	display: block;
+}
+button {
+	display: block;
+	cursor: pointer;
+	clear: both;
+	margin-top: 150px;
+	border: 1px solid yellow;
+	background-color: lightyellow;
+	padding: 5px;
+	line-height: 25px;
+	font-size: 14px;
+}
 .carousel-list {
 	list-style: none;
 	width: 10000px;
 	padding: 0px;
 	position: relative;
+	margin-left: 0px;
 }
 .carousel-element {
 	display: inline;
 	float: left;
 	margin-right: 25px;
 }
+.carousel-element:last-child {
+    margin-right: 0px;
+}
 .carousel-element img {
-	max-width: 100px;
+	width: 100px;
 	height: 70px;
 }
 .carousel-wrapper {
-	width: 345px;
+	width: 350px;
 	overflow: hidden;
 	float: left;
 }
@@ -29,7 +47,7 @@ body {
 	padding: 5px;
 	margin-top: 50px;
 }
-.carousel-arrow-left:hover, .carousel-arrow-right:hover {
+.carousel-arrow-left:hover, .carousel-arrow-right:hover, button:hover {
     cursor: pointer;
     background-color: yellow;
 }

@@ -27,7 +27,10 @@ var page = tmpl(task, {
 	data: taskData
 });
 
-$('body').append(page);
+$('button').click(function() {
+	$('.carousel').css("display", "none");
+	$('body').append(page)
+});
 
 })
 
