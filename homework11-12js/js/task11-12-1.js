@@ -1,6 +1,7 @@
 $(function() {
 
 var task = $('#task').html();
+var page;
 var taskData = [
 {
     title: 'Пенькова Ольга Юрьевна',
@@ -27,9 +28,18 @@ var page = tmpl(task, {
 	data: taskData
 });
 
-$('button').click(function() {
+$('.second').click(function() {
 	$('.carousel').css("display", "none");
+	$('.second').css("display", "none");
+	$('.first').css("display", "block");
 	$('body').append(page)
+});
+
+$('.first').click(function() {
+	$('.carousel').css("display", "block");
+	$('.second').css("display", "block");
+	$('.first').css("display", "none");
+	$('body').remove(page)
 });
 
 })

@@ -3,17 +3,21 @@ body {
 }
 .carousel {
 	display: block;
+	height: 150px;
 }
 button {
 	display: block;
 	cursor: pointer;
 	clear: both;
-	margin-top: 150px;
+	margin-top: 50px;
 	border: 1px solid yellow;
 	background-color: lightyellow;
 	padding: 5px;
 	line-height: 25px;
 	font-size: 14px;
+}
+.first {
+	display: none;
 }
 .carousel-list {
 	list-style: none;
@@ -82,7 +86,7 @@ h1 {
 .little{
 	background-color: white;
 	font-family: Tahoma;
-	margin: 1% 20% 10% 40%;
+	margin: 1% 20% 10% 20%;
 	height: 70%;
 	width: 50%;
 	box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
