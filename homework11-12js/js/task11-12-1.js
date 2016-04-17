@@ -39,7 +39,7 @@ $('.first').click(function() {
 	$('.carousel').css("display", "block");
 	$('.second').css("display", "block");
 	$('.first').css("display", "none");
-	$('body').remove(page)
+	$('.little').remove()
 });
 
 })
