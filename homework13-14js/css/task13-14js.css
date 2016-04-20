@@ -33,5 +33,42 @@ button {
 }
 .check {
 	display: none;
-	/*margin: 200px auto;*/
+}
+.modal_window {
+	display: none;
+	height: 300px;
+	width: 500px;
+	top: 50%;
+	left: 50%;
+	margin-top: -150px;
+	margin-left: -250px;
+	position: fixed;
+	z-index: 5;
+	border: 2px dotted black;
+	border-radius: 5px;
+	background-color: white;
+	opacity: 0;
+}
+.modal_text {
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+.modal_button {
+    position: absolute;
+    margin: 200px 100px 0px;
+}
+.overlay {
+	display: none;
+	background-color: black;
+	opacity: 0.3;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	z-index: 1;
 }

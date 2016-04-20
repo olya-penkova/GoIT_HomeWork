@@ -39,24 +39,33 @@ var page = tmpl(test, { //формируем тест с помощью шабл
 $('.show_test').click(function() { // выводим тест на экран по клику на кнопку
 	$('.show_test').hide();
 	$('.check').css("display", "block");
-    $('body').append(page);
+    $('.check').before(page);
 });
 
 $('.check').on('click', function() { //проверяем результаты по клику на кнопку
-    var result;
+    var $result = true;
         $('.checkbox').each(function() {
-    	if ($('.checkbox').prop('checked')) {
-    		if ($('.checkbox').attr('value') == 'true') {
-    			result = true
+    	if ($(this).prop('checked') != ($(this).attr('value') == 'true')) {
+    			$result = false;
+                return false;
     		}
-    	}
-    	else {
-    	     result = false;
-    	}
-    	return result;
     });
-    console.log(result);
- 
+    console.log($result);
+
+$('.modal_text')[0].innerHTML = $result ? 'Ответы верные, тест пройден' : 'Ответы неверные, тест не пройден'; // записываем результат теста в модальное окно
+$('.modal_window').css("display", "block").animate({opacity: 1}, 500); //показываем модальное окно
+$('.overlay').show('slow'); //показываем фон
+
+});
+
+$('.modal_button').on('click', function(){
+    $('.modal_window').animate({opacity: 0}, 500, function() {
+        $(this).css("display", "none"); //убираем модальное окно
+        $('.overlay').hide('slow'); //убираем фон
+    })
+    $('.checkbox').each(function() { //очищаем чекбоксы
+        $(this).prop('checked', false);
+    });
 });
 
 })
