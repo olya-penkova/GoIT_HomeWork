@@ -34,7 +34,7 @@ body {
 	border-radius: 10px;
 }
 .jcarousel-prev{
-	background: url(../img/colomnsprite.png) 0 0 no-repeat;
+	background: url(../../img/colomnsprite.png) 0 0 no-repeat;
 	background-size: 35px;
     width: 15px;
     height: 30px;
@@ -42,7 +42,7 @@ body {
     float: left;
 }
 .jcarousel-next{
-	background: url(../img/colomnsprite.png) -20px 0px no-repeat;
+	background: url(../../img/colomnsprite.png) -20px 0px no-repeat;
 	background-size: 35px;
     width: 15px;
     height: 30px;
@@ -84,7 +84,7 @@ body {
 	vertical-align: middle;
 	display: inline-block;
 	cursor: pointer;
-	background: url(../img/customCheck.png) 0 0 no-repeat;
+	background: url(../../img/customCheck.png) 0 0 no-repeat;
 }
 .niceCheck input {
     display: none;
@@ -103,17 +103,17 @@ body {
 	display: inline-block;
 	width: 17px;
 	height: 17px;
-	background: url(../img/customCheck.png) 0 0 no-repeat;
+	background: url(../../img/customCheck.png) 0 0 no-repeat;
 	position: relative;
 	margin-left: 3px;
 	margin-top: 3px;
 	vertical-align: middle;
 }
 .check:checked+.css_label:after {
-	background: url(../img/customCheck.png) 0 -17px no-repeat;
+	background: url(../../img/customCheck.png) 0 -17px no-repeat;
 }
 .check:disabled+.css_label:after {
-	background: url(../img/customCheckDisabled.png) 0 -17px no-repeat;
+	background: url(../../img/customCheckDisabled.png) 0 -17px no-repeat;
 }
 #webmenu {
 	width: 20%;
@@ -181,14 +181,14 @@ nav li li:last-child a {
 
 /* show arrows for dropdowns */
 nav li.dropdown > a {
-    background-image:url('../img/chevron-down-512px.svg');
+    background-image:url('../../img/chevron-down-512px.svg');
     background-size: 12px; 
     background-position:right 0px top 20px; 
     background-repeat:no-repeat;
 }
 
 nav li li.dropdown > a {
-    background-image:url('../img/chevron-right-512px.svg');
+    background-image:url('../../img/chevron-right-512px.svg');
     background-size: 6px; 
     background-position:right 14px;
     background-repeat:no-repeat;
