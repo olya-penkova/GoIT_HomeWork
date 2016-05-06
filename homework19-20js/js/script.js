@@ -12,12 +12,6 @@ $(function () {
     	    $('.round').not($(this)).removeClass('active');
   
         });
-    
-    /*$('#accordion').accordion({
-        icons: { "header": "ui-icon-plus", "activeHeader": "ui-icon-minus" }
-    	});
-    var icons = $("#accordion").accordion( "option", "icons" );
-    $("#accordion").accordion( "option", "icons", { "header": "ui-icon-plus", "activeHeader": "ui-icon-minus" } );*/
   
    function close_accordion_section() {
         $('.accordion .accordion-section-title').removeClass('active');
