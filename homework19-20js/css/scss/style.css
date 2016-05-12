@@ -119,37 +119,40 @@ header {
 .top {
   width: 100%;
   height: 805px; }
-  .top .jcarousel {
+  .top .flexslider {
     height: 470px;
     width: 1160px;
     margin: 0 auto;
     position: relative;
     overflow: hidden; }
-    .top .jcarousel ul {
+    .top .flexslider ul {
       width: 200000em;
       position: relative; }
-      .top .jcarousel ul li {
+      .top .flexslider ul li {
         float: left; }
-  .top .jcarousel-pagination {
+  .top .custom-navigation {
     margin-top: -32px;
     left: 58%;
     height: 15px;
     width: 90px;
     position: absolute;
     z-index: 1; }
-    .top .jcarousel-pagination a {
+    .top .custom-navigation .flex-control-paging li {
       display: inline-block;
       float: left; }
-      .top .jcarousel-pagination a .round {
+      .top .custom-navigation .flex-control-paging li a {
+        display: inline-block;
         height: 15px;
         width: 15px;
         margin-right: 15px;
         background-color: white;
         text-indent: -9999px; }
-      .top .jcarousel-pagination a .active {
+      .top .custom-navigation .flex-control-paging li .flex-active {
         background-image: url("../../img/active_slide.png");
         background-repeat: no-repeat;
         background-position: center; }
+    .top .custom-navigation .flex-direction-nav {
+      display: none; }
   .top .Carousel_text {
     position: absolute;
     display: block;

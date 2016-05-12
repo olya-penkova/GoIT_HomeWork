@@ -1,17 +1,23 @@
 $(function () {
-	$('.jcarousel').jcarousel();
+	/*$('.jcarousel').jcarousel();
 
 	$('.jcarousel-pagination').jcarouselPagination({
         item: function(page) {
             return '<a href="#' + page + '">' + '<div class="round">' + page+ '</div>' + '</a>';
     }
     });
+
     $(".round:first").addClass("active");
     $('.round').on('click', function() {
     	    $(this).addClass('active');
     	    $('.round').not($(this)).removeClass('active');
   
-        });
+        });*/
+
+    $('.flexslider').flexslider({
+    animation: "slide",
+    controlsContainer: $(".custom-controls-container"),
+  });
   
    function close_accordion_section() {
         $('.accordion .accordion-section-title').removeClass('active');

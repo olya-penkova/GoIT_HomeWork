@@ -111,7 +111,7 @@ nav {
 .top {
 width: 100%;
 height: 805px;
-	.jcarousel {
+	.flexslider {
 	height: 470px;
 	width: 1160px;
 	margin: 0 auto;
@@ -125,28 +125,34 @@ height: 805px;
 	   }
 	}
 	}
-	.jcarousel-pagination { 
+	.custom-navigation { 
         margin-top:-32px;
         left: 58%;
         height: 15px;
         width: 90px;
         position: absolute;
-        z-index: 1;	
-        a {
+        z-index: 1;
+        .flex-control-paging {
+        li {
         display: inline-block;
         float: left;
-	         .round {
+	         a {
+	         display: inline-block;
 	         height: 15px;
 	         width: 15px;
 	         margin-right: 15px;
 	         background-color: white;
 	         text-indent: -9999px;
 	         }
-	         .active {
+	         .flex-active {
 	         background-image: url('../../img/active_slide.png');
 	         background-repeat: no-repeat;
 	         background-position: center;
 	         }
+	     }
+	     }
+	     .flex-direction-nav {
+	     display: none;
 	     }
 	}
 	.Carousel_text {
