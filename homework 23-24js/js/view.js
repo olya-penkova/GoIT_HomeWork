@@ -17,7 +17,7 @@ define(
         };
         self.renderList = function(data) {
              var list = tmpl($('#list-tamplate').html(), {data: data});
-             self.elements.listContainer.html(list);
+             self.elements.listContainer.append(list);
         };
 
      	init();
