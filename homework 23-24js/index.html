@@ -6,7 +6,7 @@
 	<script type="text/javascript" src="js/tamplate.js"></script>
 </head>
 <body>
-<script type="text/tamplate" id="wrapper-tamplate">
+<script type="text/template" id="wrapper-tamplate">
 	<div class="wrapper">
 	     <ul class="item-list"></ul>
 	     <div class="controlls">
@@ -16,8 +16,8 @@
 	</div>
 </script>
 
-<script type="text/tamplate" id="list-tamplate">
-	<% for (var i=0; i < data.length; i++) { %>
+<script type="text/template" id="list-tamplate">
+	<% for(var i = 0; i < data.length; i++) { %>
 		<li><%= data[i] %><span data-value="<%= data[i] %>" class="item-delete">x</span></li>
 	<% }; %>
 </script>
