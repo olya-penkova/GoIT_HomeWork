@@ -1,7 +1,11 @@
 define(
      'model',
-     ['jquery'],
-     function Model(data) {
+     ['jquery',
+     'tamplate'],
+
+     function () {
+        return {
+        model: function (data) {
 
         var self = this;
         self.data = data;
@@ -22,9 +26,16 @@ define(
              self.data.splice(index, 1);
              return self.data;
         };
+        self.editItem = function(index, editedItem) {
+            self.data[index] = editedItem;
+            if (editedItem.length === 0) {
+                return self.data.splice(index, 1);
+            }
+            return self.data;
+        };
 
-
-     }
-
+      }
+     };
+    }
 
 	);

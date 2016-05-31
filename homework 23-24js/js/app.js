@@ -4,23 +4,24 @@ requirejs.config({
    },
    shim: {
    	'jquery': {
-   		exports: 'jQuery'
+   		exports: 'jquery'
    	}
    }
 });
 
 require (
-    ['model',
+    ['jquery',
+    'tamplate',
+    'model',
      'view',
      'controller'],
 
-function (model, view, controller, $){
-	$(function () {
+function ($, tamplate, model, view, controller) {
+	
 	var firstToDoList = ['test 1', 'test 2', 'test 3'];
-	var model = new Model(firstToDoList);
-	var view = new View(model);
-	var controller = new Controller(model, view);
-});
+	var model = new model.model(firstToDoList);
+	var view = new view.view(model);
+	var controller = new controller.controller(model, view);
 
 }
 

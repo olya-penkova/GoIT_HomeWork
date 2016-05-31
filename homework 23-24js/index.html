@@ -2,8 +2,7 @@
 <html>
 <head>
 	<title>ToDo List</title>
-	<script data-main="js/app.js" src="js/require.js"></script>
-	<script type="text/javascript" src="js/tamplate.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 <script type="text/template" id="wrapper-tamplate">
@@ -18,9 +17,13 @@
 
 <script type="text/template" id="list-tamplate">
 	<% for(var i = 0; i < data.length; i++) { %>
-		<li><%= data[i] %><span data-value="<%= data[i] %>" class="item-delete">x</span></li>
+		<li id="<%= i + 1 %>" class="todoitem">
+		<label id="<%= i + 1 %>" class="item-label" data-value="<%= data[i] %>"><%= data[i] %></label>
+        <span class="item-delete" data-value="<%= data[i] %>">X</span>
+        <input id="<%= i + 1 %>" type="text" class="item-new-value" value="">
+		</li>
 	<% }; %>
 </script>
-
+<script data-main="js/app.js" src="js/require.js"></script>
 </body>
 </html>

@@ -1,7 +1,11 @@
 define(
      'view',
-     ['jquery', 'model'],
-     function View(model) {
+     ['jquery',
+      'tamplate',
+     'model'],
+     function () {
+        return {
+     view: function (model) {
 
         var self = this;
 
@@ -24,5 +28,6 @@ define(
 
      	init();
      }
-
+ };
+    }
 	);

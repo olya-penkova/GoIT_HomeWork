@@ -16,12 +16,21 @@ $(function () {
  
     $('.accordion-section-tittle').click(function(e) {
         var currentAttrValue = $(this).attr('href');
+        var className = $(this).attr('class');
+        var activeIndex = className.indexOf('active');
+
         close_accordion_section();
-       
+
+        if (activeIndex != -1) {
+        close_accordion_section();
+        }
+        else {
             $(this).addClass('active');
             $('.accordion-section-tittle').not($(this)).removeClass('active');
-            $('.accordion ' + currentAttrValue).slideToggle().addClass('open'); 
+            $('.accordion ' + currentAttrValue).slideDown().addClass('open');
+
        e.preventDefault();
+        }
        });
  
         
