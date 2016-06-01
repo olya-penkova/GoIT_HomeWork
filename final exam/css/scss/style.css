@@ -1,4 +1,4 @@
-html, body, div, span, applet, object, iframe, h1, h2, header h1, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, header h1, h3, h4, h5, footer h6, footer span, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -142,5 +142,96 @@ header {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   margin-top: 40px; }
+.partner .partner_item {
+  display: block;
+  height: 230px;
+  width: 200px;
+  margin: 10px auto;
+  text-align: center; }
+  .partner .partner_item .partner_foto {
+    margin: 0 auto;
+    height: 122px;
+    width: 122px; }
+    .partner .partner_item .partner_foto.one {
+      background: url("../../img/partners_sprite.png") 0px 0px;
+      background-repeat: no-repeat; }
+    .partner .partner_item .partner_foto.two {
+      background: url("../../img/partners_sprite.png") 0px -125px;
+      background-repeat: no-repeat; }
+    .partner .partner_item .partner_foto.three {
+      background: url("../../img/partners_sprite.png") 0px -250px;
+      background-repeat: no-repeat; }
+    .partner .partner_item .partner_foto.four {
+      background: url("../../img/partners_sprite.png") 0px -377px;
+      background-repeat: no-repeat; }
+  .partner .partner_item h5, .partner .partner_item footer h6, footer .partner .partner_item h6, .partner .partner_item footer span, footer .partner .partner_item span {
+    color: #333333;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  .partner .partner_item p {
+    color: #666666;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 14px; }
+.partner button {
+  height: 35px;
+  width: 275px;
+  background: none;
+  border: 2px solid #ff4e50;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
+  margin: 10px auto; }
+  .partner button a {
+    color: #ff4e50;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none; }
+
+.ideas {
+  border-bottom: 5px solid #ff4e50;
+  height: 1230px; }
+  .ideas h3 {
+    color: #333333;
+    font-size: 22px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    margin-top: 40px; }
+  .ideas .grid .grid-item {
+    height: 120px;
+    width: 300px;
+    display: block;
+    margin: 10px auto; }
+
+footer {
+  text-align: center;
+  height: 190px; }
+  footer h5, footer h6, footer span {
+    color: #ff4e50;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    letter-spasing: 1px;
+    margin-top: 20px; }
+  footer h6 {
+    color: #333333; }
+  footer a {
+    text-decoration: none;
+    color: #666666;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 14px; }
+  footer span {
+    color: #cccccc;
+    font-size: 10px;
+    letter-spacing: 2px; }
+  footer img {
+    display: block;
+    margin: 0 auto; }
 
 /*# sourceMappingURL=style.css.map */

@@ -15,6 +15,7 @@ $(function () {
     };
  
     $('.accordion-section-tittle').click(function(e) {
+        e.preventDefault();
         var currentAttrValue = $(this).attr('href');
         var className = $(this).attr('class');
         var activeIndex = className.indexOf('active');
@@ -29,7 +30,7 @@ $(function () {
             $('.accordion-section-tittle').not($(this)).removeClass('active');
             $('.accordion ' + currentAttrValue).slideDown().addClass('open');
 
-       e.preventDefault();
+       
         }
        });
  

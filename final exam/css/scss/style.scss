@@ -128,4 +128,106 @@ header {
         font-weight: bold;
         margin-top: 40px;
 	}
+	.partner_item {
+	    display: block;
+	    height: 230px;
+	    width: 200px;
+	    margin: 10px auto;
+	    text-align: center;
+	    .partner_foto {
+	    margin: 0 auto;
+	    height: 122px;
+	    width: 122px;
+	    $position: 0px -125px -250px -377px;
+	    $i:0;
+	    @each $pos in one, two, three, four {
+	         $i: $i+1;
+	         &.#{$pos} {
+	             background: url('../../img/partners_sprite.png') 0px nth($position, $i);
+	             background-repeat: no-repeat;
+	         }
+	    }
+	  }
+	  h5 {
+	        color: $text_color;
+	        font-size: 14px;
+            font-family: $montserrat;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 20px;
+	    }
+	    p {
+	        color: #666666;
+	        font-family: $roboto;
+	        font-weight: 300;
+	        font-size: 14px;
+	    }
+	}
+	button {
+	    height: 35px;
+	    width: 275px;
+	    background: none;
+	    border: 2px solid $pink;
+	    @include border-radius(20px);
+	    margin: 10px auto;
+	    a {
+	       color: $pink;
+	       font-family: $montserrat;
+	       font-size: 14px;
+	       font-weight: bold;
+	       text-decoration: none;
+	    }
+	}
+}
+.ideas {
+border-bottom: 5px solid $pink;
+height: 1230px;
+h3 {
+        color: $text_color;
+        font-size: 22px;
+        font-family: $montserrat;
+        font-weight: bold;
+        margin-top: 40px;
+	}
+.grid {
+	.grid-item {
+	    height: 900px;
+	    width: 300px;
+	    display: block;
+	    margin: 10px auto;
+	}
+}
+}
+footer {
+	text-align: center;
+	height: 190px;
+	h5 {
+	   color: $pink;
+	   font-size: 16px;
+	   font-family: $montserrat;
+	   font-weight: bold;
+	   letter-spasing: 1px;
+	   margin-top: 20px;
+	}
+	h6 {
+	   @extend h5;
+	   color: $text_color;
+	}
+	a {
+	   text-decoration: none;
+	   color: #666666;
+	   font-family: $roboto;
+	   font-weight: 300;
+	   font-size: 14px;
+	}
+	span {
+	    @extend h5;
+	    color: #cccccc;
+	    font-size: 10px;
+	    letter-spacing: 2px;
+	}
+	img {
+	    display: block;
+	    margin: 0 auto;
+	}
 }
