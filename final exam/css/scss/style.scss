@@ -191,10 +191,11 @@ h3 {
 	}
 .grid {
 	.grid-item {
-	    height: 900px;
-	    width: 300px;
+	    max-height: 120px;
+	    max-width: 300px;
 	    display: block;
 	    margin: 10px auto;
+	    position: relative;
 	}
 }
 }

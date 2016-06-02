@@ -203,10 +203,11 @@ header {
     font-weight: bold;
     margin-top: 40px; }
   .ideas .grid .grid-item {
-    height: 120px;
-    width: 300px;
+    max-height: 120px;
+    max-width: 300px;
     display: block;
-    margin: 10px auto; }
+    margin: 10px auto;
+    position: relative; }
 
 footer {
   text-align: center;

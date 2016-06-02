@@ -8,6 +8,7 @@
 	<script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
 	<script src="js/script.js" type="text/javascript"></script>
 	<script src="js/masonry.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/tamplate.js"></script>
 </head>
 <body>
 
@@ -74,13 +75,17 @@
 	<div class="container">
 	<h3>Discover holiday activity ideas</h3>
 	<div class="grid">
-		<div class="grid-item"><!--заполнить шаблонизатором-->
-        
-		</div>
+	<script type="text/template" id="test">
+	    <ul class="menu">
+		<% for (var i = 0; i < data.length; i++) { %>
+        <li class="grid-item"><%= data[i] %></li>
+        <% }; %>
+		</ul>
+	</script>	
 		</div>
 	<h3>Dicover holiday activity</h3>
 	<form>
-	<input class="form" type="text" placeholder="Enter your interests">
+	<input class="search"  type="text" placeholder="Enter your interests">
 	<button>Search partners</button>
 	</form>	
 	</div>
