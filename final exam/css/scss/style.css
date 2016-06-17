@@ -72,13 +72,15 @@ header {
     color: white; }
   header h1 {
     font-size: 30px;
-    margin-top: 35px; }
+    margin-top: 35px;
+    line-height: 33px; }
   header h3 {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-size: 18px;
     color: white;
-    margin: 20px;
+    margin: 13px auto;
+    width: 200px;
     line-height: 25px; }
 
 .steps {
@@ -109,9 +111,9 @@ header {
       background: url("../../img/steps_sprite.png") 0px -500px;
       background-repeat: no-repeat; }
   .steps button {
-    margin-left: 15px;
+    margin-left: 22px;
     height: 20px;
-    width: 65px;
+    width: 70px;
     color: white;
     font-family: "Montserrat", sans-serif;
     font-size: 10px;
@@ -128,86 +130,163 @@ header {
     font-size: 24px;
     font-weight: bold;
     color: white;
-    margin-top: 20px;
-    margin-bottom: 20px; }
+    width: 205px;
+    margin: 20px 0px; }
   .steps p {
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     font-weight: 300;
     color: #cccccc; }
 
-.partner h3 {
-  color: #333333;
-  font-size: 22px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  margin-top: 40px; }
-.partner .partner_item {
-  display: block;
-  height: 230px;
-  width: 200px;
-  margin: 10px auto;
+.second button {
+  margin-top: 30px; }
+
+.partner {
   text-align: center; }
-  .partner .partner_item .partner_foto {
-    margin: 0 auto;
-    height: 122px;
-    width: 122px; }
-    .partner .partner_item .partner_foto.one {
-      background: url("../../img/partners_sprite.png") 0px 0px;
-      background-repeat: no-repeat; }
-    .partner .partner_item .partner_foto.two {
-      background: url("../../img/partners_sprite.png") 0px -125px;
-      background-repeat: no-repeat; }
-    .partner .partner_item .partner_foto.three {
-      background: url("../../img/partners_sprite.png") 0px -250px;
-      background-repeat: no-repeat; }
-    .partner .partner_item .partner_foto.four {
-      background: url("../../img/partners_sprite.png") 0px -377px;
-      background-repeat: no-repeat; }
-  .partner .partner_item h5, .partner .partner_item footer h6, footer .partner .partner_item h6, .partner .partner_item footer span, footer .partner .partner_item span {
+  .partner h3 {
     color: #333333;
-    font-size: 14px;
+    font-size: 22px;
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 20px; }
-  .partner .partner_item p {
-    color: #666666;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-size: 14px; }
-.partner button {
-  height: 35px;
-  width: 275px;
-  background: none;
-  border: 2px solid #ff4e50;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  border-radius: 20px;
-  margin: 10px auto; }
-  .partner button a {
-    color: #ff4e50;
-    font-family: "Montserrat", sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    text-decoration: none; }
+    width: 314px;
+    margin-top: 40px; }
+  .partner .partner_item {
+    display: block;
+    height: 230px;
+    width: 200px;
+    margin: 10px auto;
+    text-align: center; }
+    .partner .partner_item .partner_foto {
+      margin: 0 auto;
+      height: 122px;
+      width: 122px; }
+      .partner .partner_item .partner_foto.one {
+        background: url("../../img/partners_sprite.png") 0px 0px;
+        background-repeat: no-repeat; }
+      .partner .partner_item .partner_foto.two {
+        background: url("../../img/partners_sprite.png") 0px -125px;
+        background-repeat: no-repeat; }
+      .partner .partner_item .partner_foto.three {
+        background: url("../../img/partners_sprite.png") 0px -250px;
+        background-repeat: no-repeat; }
+      .partner .partner_item .partner_foto.four {
+        background: url("../../img/partners_sprite.png") 0px -377px;
+        background-repeat: no-repeat; }
+    .partner .partner_item .three {
+      margin-top: 30px; }
+    .partner .partner_item .four {
+      margin-top: -10px; }
+    .partner .partner_item h5, .partner .partner_item footer h6, footer .partner .partner_item h6, .partner .partner_item footer span, footer .partner .partner_item span {
+      color: #333333;
+      font-size: 14px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      margin-top: 20px;
+      margin-bottom: 20px; }
+    .partner .partner_item p {
+      color: #666666;
+      font-family: "Roboto", sans-serif;
+      font-weight: 300;
+      font-size: 14px; }
+  .partner button {
+    height: 39px;
+    width: 280px;
+    background: none;
+    border: 2px solid #ff4e50;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    border-radius: 20px;
+    margin: -10px auto 10px; }
+    .partner button a {
+      color: #ff4e50;
+      font-family: "Montserrat", sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      text-decoration: none; }
 
 .ideas {
   border-bottom: 5px solid #ff4e50;
-  height: 1230px; }
+  height: 1230px;
+  text-align: center; }
   .ideas h3 {
     color: #333333;
     font-size: 22px;
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
-    margin-top: 40px; }
-  .ideas .grid .grid-item {
-    max-height: 120px;
-    max-width: 300px;
-    display: block;
-    margin: 10px auto;
-    position: relative; }
+    margin-top: 28px;
+    margin-bottom: 20px; }
+  .ideas p {
+    color: #333333;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300; }
+  .ideas .grid {
+    margin-bottom: 70px; }
+    .ideas .grid .grid-item {
+      margin-left: 7px; }
+      .ideas .grid .grid-item span {
+        position: absolute;
+        z-index: 5;
+        display: block;
+        height: 20px;
+        width: 200px;
+        margin-top: 55px;
+        left: 50%;
+        top: 50%;
+        margin: -10px -100px;
+        text-align: center;
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        font-size: 22px;
+        font-weight: bold; }
+    .ideas .grid ul {
+      overflow: hidden;
+      position: absolute;
+      height: 870px; }
+      .ideas .grid ul .grid-item img {
+        height: 130px;
+        width: 300px;
+        display: block;
+        margin: 10px auto;
+        position: relative;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        border-radius: 5px; }
+      .ideas .grid ul .grid-item .word {
+        position: absolute;
+        z-index: 5;
+        display: block;
+        height: 20px;
+        width: 50px;
+        margin-top: 55px;
+        left: 40%;
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        font-size: 22px;
+        font-weight: bold; }
+  .ideas .search {
+    width: 275px;
+    height: 35px;
+    margin-top: 15px;
+    padding-left: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif; }
+  .ideas button {
+    height: 40px;
+    width: 280px;
+    background: #ff4e50;
+    border: none;
+    color: white;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    border-radius: 20px;
+    margin: 10px auto; }
 
 footer {
   text-align: center;
@@ -217,10 +296,13 @@ footer {
     font-size: 16px;
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
-    letter-spasing: 1px;
-    margin-top: 20px; }
+    letter-spacing: 1px;
+    margin-top: 17px; }
   footer h6 {
-    color: #333333; }
+    color: #333333;
+    margin-top: 13px;
+    letter-spacing: -1px;
+    margin-bottom: 3px; }
   footer a {
     text-decoration: none;
     color: #666666;
@@ -230,6 +312,8 @@ footer {
   footer span {
     color: #cccccc;
     font-size: 10px;
+    display: block;
+    margin: 15px;
     letter-spacing: 2px; }
   footer img {
     display: block;
