@@ -21,7 +21,7 @@ $('.contacts_item button').click(function(){
 
             type: "POST",
 
-            url: "../send.php",
+            url: "send.php",
 
             data: {"posName": posName, "posEmail": posEmail, "posTel": posTel, "posText": posText},
 
