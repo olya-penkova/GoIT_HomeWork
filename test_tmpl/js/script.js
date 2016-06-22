@@ -141,9 +141,12 @@ $('#last').append(salePage); //выводим карусель на страни
     }
   ]
 });
+  // меняем вид кнопок регулирования карусели
+
 	$('button.slick-prev.slick-arrow').html('<i class="fa fa-long-arrow-left" aria-hidden="true"></i>');
 	$('button.slick-next.slick-arrow').html('<i class="fa fa-long-arrow-right" aria-hidden="true"></i>');
 
+// делаем кнопку "ввверх" при прокрутке экрана
   var upElem = document.getElementById('back_top_button');
 
     var pageYLabel = 0;
@@ -199,7 +202,7 @@ $('#last').append(salePage); //выводим карусель на страни
 
       }
     };
-
+// вешаем ярлык sale если есть старая цена
 	/*var sale = $('.salePrice');
 	console.log(sale);
 
@@ -219,5 +222,11 @@ $('#last').append(salePage); //выводим карусель на страни
 	};
 
     chekSale();*/
+
+// показываем iframe account при нажатии на my account
+
+$('.header_item a:nth-child(2)').on('click', function () {
+     $('.account').css('display', 'block');
+});
 
 })
