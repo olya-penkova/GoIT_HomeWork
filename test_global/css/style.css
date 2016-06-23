@@ -485,7 +485,7 @@ form p:before {
     height: 30px;
     padding: 5px;
 }
-.contacts_item input:nth-child(3) {
+.contacts_item input:nth-child(4) {
 	width: 90%;
 }
 .contacts_item textarea {
@@ -519,7 +519,15 @@ form p:before {
 	color: #ffffff;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
+	opacity: 1;
 	font-weight: 600;
+}
+.cart_hover:hover {
+	opacity: 0;
+	-webkit-transition: 1s ease-out 1s;
+     -moz-transition: 1s ease-out 1s;
+     -o-transition: 1s ease-out 1s;
+     transition: 1s ease-out 1s;
 }
 footer {
 	height: 115px;
