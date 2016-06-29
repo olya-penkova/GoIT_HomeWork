@@ -8,6 +8,7 @@
           border-radius: $radius;
 }
 
+@media (max width: 320px) {
 .container{
 	margin: 0 auto;
 	width: 320px;
@@ -317,4 +318,134 @@ footer {
 	    display: block;
 	    margin: 0 auto;
 	}
+}
+}
+
+@media (min width 321px) and (max width 768px) {
+
+.container{
+	margin: 0 auto;
+	width: 768px;
+}
+header {
+	height: 700px;
+	text-align: center;
+	background: url('../../img/header_background.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	button {
+	    height: 30px;
+	    width: 85px;
+	    margin-top: 20px;
+	    border: none;
+	    background: none;
+	    @include border-radius(20px);
+	    a {
+	       color: white;
+	       text-decoration: none;
+	       font-family: $montserrat;
+	       font-weight: bold;
+	       font-size: 14px;
+	    }
+	}
+	 button:hover {
+	     border: 2px solid white;
+	     
+	}
+	button:last-child {
+	     background-color: $pink;
+	     height: 40px;
+	     width: 225px;
+	     margin-top: 0px;
+	}
+     h2 {
+         font-family: $montserrat;
+	     font-weight: bold;
+         font-size: 20px;
+         margin-top: 120px;
+         color: white;
+     }
+     h1 {
+         @extend h2;
+         font-size: 52px;
+         margin-top: 35px;
+         line-height: 33px;
+     }
+     h3 {
+         font-family: $roboto;
+         font-weight: 300;
+         font-size: 24px;
+         color: white;
+         margin: 13px auto;
+         width: 200px;
+         line-height: 25px;
+     }
+}
+.steps {
+.320size {
+	display: none;
+}
+    text-align: center;
+	h3 {
+        color: $text_color;
+        font-size: 22px;
+        font-family: $montserrat;
+        font-weight: bold;
+        margin-top: 40px;
+	}
+	.steps_item {
+	    display: block;
+	    height: 170px;
+	    width: 300px;
+	    padding-top: 70px;
+	    margin: 10px auto;
+	    @include border-radius(5px);
+	    $position: 0px -250px -500px;
+	    $i:0;
+	    @each $pos in first, second, third {
+	         $i: $i+1;
+	         &.#{$pos} {
+	             background: url('../../img/steps_sprite.png') 0px nth($position, $i);
+	             background-repeat: no-repeat;
+	         }
+	    }
+	}
+	     button {
+	         
+	         margin-left: 22px;
+	         height: 20px;
+	         width: 70px;
+	         color: white;
+	         font-family: $montserrat;
+	         font-size: 10px;
+	         border: none;
+	         @include border-radius(20px);
+	         background-color: $pink;
+	         display: block;
+	         letter-spacing: 1px;
+
+	     }
+	     h2 {
+	         font-family: $montserrat;
+             font-size: 24px;
+             font-weight: bold;
+             color: white;
+             width: 205px;
+             margin: 20px 0px;
+            
+	     }
+	     p {
+	         font-family: $roboto;
+	         font-size: 14px;
+	         font-weight: 300;
+	         color: #cccccc;
+	     }
+}
+.second {
+	button {
+	     margin-top: 30px;
+	}
+}
+
 }
