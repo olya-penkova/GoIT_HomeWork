@@ -1,0 +1,76 @@
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+aside {
+	width: 20%;
+	height: 500px;
+	display: inline-block;
+	float: left;
+	margin-left: 60px;
+	text-align: justify;
+	h3 {
+	   color: black;
+	   font-size: 20px;
+	   font-family: $noto;
+	   font-weigth: 500;
+	   margin: 20px auto;
+	}
+	h4 {
+	    @extend h3;
+	    color: $blue;
+	}
+	label {
+	    color: #8b8b8b;
+	    font-family: $noto;
+	    font-size: 16px;
+	    line-height: 25px;
+	    cursor: pointer;
+	}
+	label:hover {
+	     color: $blue;
+	}
+	button {
+	     color: #fff;
+         text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+         font-size: 16px;
+         font-weight: 500;
+         font-family: $noto;
+         line-height: 20px;
+         text-align: center;
+         background-color: $blue;
+         height: 40px;
+         width: 60px;
+         border-bottom: solid 1px rgba(0,0,0,0.28);
+         border-right: solid 1px rgba(0,0,0,0.2);
+         border-top: solid 1px transparent;
+         border-left: solid 1px transparent;
+         margin: 50px;
+	}
+	button:hver {
+	      background-color: #3c6d96;
+	}
+}
+.content {
+	width: 75%;
+	display: inline-block;
+	margin-top: 40px;
+	float: left;
+	text-align: center;
+	h1 {
+	    color: $blue;
+	    font-size: 30px;
+	    font-weight: 500;
+	    font-family: $noto;
+	    letter-spacing: 3px;
+        line-height: 36px;
+        margin-bottom: 50px;
+	}
+	figure {
+	     display: inlina-block;
+	     float: left;
+	     width: 30%;
+	     padding: 10px;
+	}
+}

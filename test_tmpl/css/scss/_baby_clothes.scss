@@ -1,0 +1,24 @@
+.page2 {
+	display: none;
+}
+#button_page1 {
+	display: inline-block;
+	float: left;
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+	background-color: #f5f5f5;
+	color: #8b8b8b;
+	border-right: 1px solid #dfdfdf;
+	font-size: 14px;
+	line-height: 50px;
+}
+#button_page2 {
+	@extend #button_page1;
+}
+#button_page1:hover {
+	 -webkit-box-shadow: 0px 0px 5px 3px rgba(223,223,223,0.5);
+      -moz-box-shadow: 0px 0px 5px 3px rgba(223,223,223,0.5);
+     box-shadow: 0px 0px 5px 3px rgba(223,223,223,0.5);
+}

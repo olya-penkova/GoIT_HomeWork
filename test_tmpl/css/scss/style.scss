@@ -1,6 +1,11 @@
 @import '_reset';
 @import '_variables';
 @import '_account';
+@import '_ethnick';
+@import '_baby_gear';
+@import '_baby_clothes';
+@import '_about_us';
+@import '_customer_service';
 
 .container {
 	margin: 0 auto;
@@ -121,6 +126,7 @@ header {
                              float: none;
                              display: block;
                              margin-top: 20px;
+                             text-align: justify;
                              a {
                                  font-size: 14px;
                              }
@@ -149,7 +155,7 @@ header {
                  }
                  }
 	}
-	li:hover {
+	#menu li:hover {
 	     .submenu-container {
 	         display: block;
 	         opacity: 1;
@@ -312,7 +318,7 @@ header {
 	       z-index: 1;
 	       height: 70px;
 	       width: 143px;
-	       margin-left: -60px;
+	       margin-left: -360px;
 	       margin-top: 250px;
 	    }
 }
@@ -551,7 +557,7 @@ z-index: 3;
 	.bl {
 	    position: absolute;
 	    margin-top: 305px;
-	    margin-left: -50px;
+	    margin-left: -350px;
 	    text-align: center;
 	    background-color: white;
 	    border-image: url(../../img/border-d-b.png) 6 repeat;
@@ -595,6 +601,8 @@ z-index: 3;
     }
     li {
         margin-top: 10px;
+        text-align: justify;
+        margin-left: 70px;
         a {
            color: $blue;
 

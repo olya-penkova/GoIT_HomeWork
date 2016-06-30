@@ -1,0 +1,82 @@
+.container {
+	margin: 0 auto;
+	width: 1200px;
+}
+.customer_service {
+	 background: url(../../img/border-b.png) bottom repeat-x;
+}
+h4 {
+	margin: 20px auto;
+	line-height: 1.8em;
+    font-weight: 500;
+    color: $blue;
+    font-family: $noto;
+    font-size: 20px;
+}
+p {
+	color: #8b8b8b;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0px 0px 1.5em;
+    font-family: $noto;
+}
+.terms_item {
+	width: 45%;
+	margin: 30px;
+	display: inline-block;
+	float: left;
+	.fa {
+	    color: $blue;
+	    font-size: 18px;
+	    display: inline-block;
+	}
+	h5 {
+	     text-transform: uppercase;
+         font-size: 16px;
+         font-weight: 500;
+         line-height: 1.814em;
+         color: $blue;
+         font-family: $noto;
+         text-align: center;
+         display: inline-block;
+	}
+	p {
+         text-align: justify;
+	}
+}
+table {
+margin-bottom: 50px;
+tr {
+	height: 35px;
+	width: 20%;
+	height: 50px;
+	color: $blue;
+	font-family: $noto;
+	font-size: 14px;
+     td {
+        padding: 10px;
+        line-height: 1.567em;
+        text-align: left;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(221, 221, 221);
+     }
+     td:nth-child(4) {
+     color: $gold;
+     font-size: 16px;
+     }
+}
+.table_head {
+        font-size: 16px;
+        line-height: 1.667em;
+        color: rgb(51, 51, 51);
+        text-transform: uppercase;
+        font-weight: 500;
+        td{
+        border-top: 1px solid $blue;
+        }
+        td:nth-child(4) {
+        color: rgb(51, 51, 51);
+        }
+     }
+}

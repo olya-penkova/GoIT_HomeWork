@@ -27,12 +27,25 @@ $('form').on('submit', function() {
     	}
     });
     return false;
-})
+});
 
  $('.grid').masonry({
   // options
   itemSelector: '.grid-item',
   columnWidth: 300
-})
+});
+
+$('.jcarousel').jcarousel({
+        // Core configuration goes here
+    });
+
+
+   $('.jcarousel-prev').jcarouselControl({
+        target: '-=1'
+    });
+
+    $('.jcarousel-next').jcarouselControl({
+        target: '+=1'
+    });
 
 });

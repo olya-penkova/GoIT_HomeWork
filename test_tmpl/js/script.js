@@ -223,10 +223,115 @@ $('#last').append(salePage); //выводим карусель на страни
 
     chekSale();*/
 
+// показываем главную страницу при нажатии на HOME
+$('.header_item a:first-child').on('click', function() {
+  $('iframe').css('display', 'none');
+  $('.home').css('display', 'block');
+});
+
+
 // показываем iframe account при нажатии на my account
 
 $('.header_item a:nth-child(2)').on('click', function () {
+     $('.home').css('display', 'none');
+     $('iframe').css('display', 'none');
      $('.account').css('display', 'block');
+});
+
+// показываем раздел ethnic из главного меню при нажатии на пункт ETHNICK
+
+$('#ethnick').on('click', function() {
+     $('.home').css('display', 'none');
+     $('iframe').css('display', 'none');
+     $('.ethnick').css('display', 'block');
+});
+
+// показываем раздел baby gear из главного меню при нажатии на пункт BABY GEAR
+
+$('#baby_gear').on('click', function() {
+     $('.home').css('display', 'none');
+     $('iframe').css('display', 'none');
+     $('.baby_gear').css('display', 'block');
+});
+
+// показываем раздел baby gift sets из главного меню при нажатии на пункт BABY GIFT SETS
+
+$('#baby_gift_sets').on('click', function() {
+     $('.home').css('display', 'none');
+     $('iframe').css('display', 'none');
+     $('.baby_gift_sets').css('display', 'block');
+});
+
+//показываем разел baby shoes из главного меню при нажатии на пункт BABY SHOES
+
+$('#baby_shoes').on('click', function() {
+     $('.home').css('display', 'none');
+     $('iframe').css('display', 'none');
+     $('.baby_shoes').css('display', 'block');
+});
+
+//показываем разел baby clothes (первая страница) из главного меню при нажатии на пункт BABY CLOTHES
+
+$('#baby_clothes').on('click', function() {
+     $('.home').css('display', 'none');
+     $('iframe').css('display', 'none');
+     $('.baby_clothes').css('display', 'block');
+});
+
+//показываем разел baby gift sets из главного меню при нажатии на boys на баннере
+
+$('.banner .banner_item:nth-child(2) a').on('click', function() {
+     $('.home').css('display', 'none');
+     $('iframe').css('display', 'none');
+     $('.baby_gift_sets').css('display', 'block');
+});
+
+//показываем разел baby gear из главного меню при нажатии на girls на баннере
+
+$('.banner .banner_item:nth-child(2) a:nth-child(4)').on('click', function() {
+     $('.home').css('display', 'none');
+     $('iframe').css('display', 'none');
+     $('.baby_gear').css('display', 'block');
+});
+
+//показываем раздел baby clothes (первая страница) из главного меню при нажатии на кнопку SHOP NOW в разделе MINI
+
+$('.mini .mini_item a').on('click', function() {
+     $('.home').css('display', 'none');
+     $('iframe').css('display', 'none');
+     $('.baby_clothes').css('display', 'block');
+});
+
+// показываем раздел bsby shoes из главного меню при нажатии SHOP NOW в разделе BABY
+
+$('.baby .mini_item a').on('click', function() {
+     $('.home').css('display', 'none');
+     $('iframe').css('display', 'none');
+     $('.baby_shoes').css('display', 'block');
+});
+
+// показываем раздел bsby gift sets из главного меню при нажатии SHOP NOW в разделе TODDLER
+
+$('.toddler .mini_item a').on('click', function() {
+     $('.home').css('display', 'none');
+     $('iframe').css('display', 'none');
+     $('.baby_gift_sets').css('display', 'block');
+});
+
+// показываем вкладки из секции Information
+
+$('.information .information_item li:first-child').on('click', function() {
+     
+     $('.home').css('display', 'none');
+     $('iframe').css('display', 'none');
+     $('.about_us').css('display', 'block');  
+});
+
+$('.information .information_item li:nth-child(2)').on('click', function() {
+    
+     $('.home').css('display', 'none');
+     $('iframe').css('display', 'none');
+     $('.customer_service').css('display', 'block');  
 });
 
 })
