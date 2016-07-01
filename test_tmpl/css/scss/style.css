@@ -655,11 +655,10 @@ header {
       transform-origin: 0 50%;
       transform: rotate(90deg);
       position: absolute;
-      /*top: 0;
-      left: 0;*/
+      line-height: 16px;
       display: block;
       margin-left: 70px;
-      width: 55px;
+      width: 70px;
       padding: 8px 15px 4px;
       background: #fff;
       border: 2px solid #ba9d75;
