@@ -21,7 +21,6 @@ $(function() {
 
     	$.each(categoryArr, function() {
     		$(this).on('click', function() {
-    		event.preventDefault();
     		$(this).attr('class', 'active');
     		$('.category li').not(this).removeAttr('class', 'active');
     	});
