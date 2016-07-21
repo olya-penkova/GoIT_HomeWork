@@ -1,0 +1,313 @@
+@mixin border-radius ($radius) {
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	.container {
+	max-width: 1024px;
+	margin: 0 auto;
+}	
+	header {
+	width: 100%;
+	height: 55px;
+	padding-top: 25px;
+	.logo {
+	    display: inline-block;
+	    float: left;
+	    margin-left: 3%;
+	    color: $blue;
+	    font-family: $robotoSlab;
+	    font-size: 30px;
+	}
+	nav {
+	    width: 38%;
+	    display: inline-block;
+	    float: left;
+	    margin-left: 2%;
+	    margin-right: 2%;
+	    margin-top: 5px;
+	    a {
+	       text-decoration: none;
+	       color: $black;
+	       font-family: $robotoBlack;
+	       font-size: 16px;
+	       display: inline-block;
+	       padding-left: 10px;
+	       padding-right: 10px;
+	       margin-left: 20px;
+	       position: relative;
+
+	    .submenu {
+	       display: none;
+	       position: absolute;
+	       background-color: white;
+	       @include border-radius (5px);
+           border: 2px solid #e9e3d8;
+	       li {
+	          z-index: 9;
+	          margin-top: 10px;
+	          font-family: $roboto;
+
+	       }
+	    }
+	  } 
+	}
+	.lang {
+	     display: inline-block;
+	     float: left;
+	     margin-top: 5px;
+	     width: 45px;
+	     font-family: $roboto;
+	     font-weight: bold;
+	     font-size: 14px;
+	     color: $black;
+	     opacity: 0.8;
+	}
+	
+	.lang:hover {
+	     cursor: pointer;
+	}
+	.header_icon {
+	      height: 30px;
+	      width: 30px;
+	      position: relative;
+	      margin-left: 25px;
+	      display: inline-block;
+	      float: left;
+	      $position: 0px -56px -116px -177px;
+	      $i:0;
+	      @each $pos in first, second, third, fourth {
+	         $i: $i+1;
+	         &.#{$pos} {
+	             background: url('../../img/icons_sprite.png') nth($position, $i) 0px;
+	             background-repeat: no-repeat;
+	         }
+	    }
+	    span {
+	        position: absolute;
+            z-index: 1;
+            color: $blue;
+            font-family: $robotoBlack;
+            font-size: 12px;
+            border: 2px solid $blue;
+            @include border-radius(100%);
+            margin-top: -10px;
+            right: -5px;
+            padding-top: 3px;
+            height: 12px;
+            width: 15px;
+            text-align: center;
+            background-color: white;
+	    }
+	}
+	.header_icon:hover {
+         cursor: pointer;
+	}
+	.fa-bars {
+	display: none;
+}
+.icons425 {
+	display: none;
+}
+}
+.popular {
+	background-color: #f1edea;
+	height: 575px;
+	width: 100%;
+	h2 {
+	   color: $black;
+	   font-family: $robotoCond;
+	   font-weight: bold;
+	   font-size: 26px;
+	   text-align: center;
+	   margin-bottom: 30px;
+	}
+	.carousel-arrow-left {
+	float: left;
+	display: block;
+	height: 30px;
+	width: 30px;
+	margin-left: 5%;
+	margin-top: -50px;
+	background: url(../../img/slide_arrows.png) 5px 0 no-repeat;
+}
+    .carousel-arrow-right {
+    display: block;
+	height: 30px;
+	width: 30px;
+    float: right;
+    margin-right: 5%;
+    margin-top: -50px;
+    background: url(../../img/slide_arrows.png) -1143px -2px no-repeat;
+    }
+    .carousel-arrow-left:hover, .carousel-arrow-right:hover {
+        cursor: pointer;
+}
+	.carousel_wrapper {
+	display: block;
+	margin: 0 auto;
+	overflow: hidden;
+	width: 870px;
+    ul {
+    position: relative;
+    width: 10000px;
+	li {
+	   display: inline-block;
+	   float: left;
+	   height: 365px;
+	   width: 270px;
+	   margin-right: 30px;
+	   background-color: white;
+	   @include border-radius(5px);
+	   img {
+	       height: 70%;
+	       width: 100%;
+	       display: block;
+	       @include border-radius(5px 5px 0 0);
+	   }
+	   figcaption {
+	       text-align: center;
+	       width: 90%;
+           margin-top: 10px;
+           font-family: $roboto;
+           font-weight: bold;
+           font-size: 16px;
+           color: #2c3e50;
+           line-height: 25px;
+           span {
+               font-size: 14px;
+               opacity: 0.6;
+               display: block;
+               margin-top: 10px;
+           }
+	   }
+	}
+	li:last-child {
+	    margin-right: 0px;
+	}
+	}
+}	
+}
+.rules {
+	width: 100%;
+	height: 200px;
+	background-color: #45413e;
+	.rules_item {
+	   height: 100%;
+	   width: 29%;
+	   display: inline-block;
+	   float: left;
+	   margin-top: 35px;
+	   h3 {
+	      font-family: $robotoBlack;
+	      font-size: 18px;
+	      color: white;
+	      margin-bottom: 20px;
+	   }
+	   p {
+	      font-family: $roboto;
+	      font-size: 14px;
+	      color: #868380;
+	      line-height: 19px;
+	   }
+	   .rules_foto {
+	      height: 115px;
+	      width: 65px;
+	      float: left;
+	      display: block;
+	      margin-right: 20px;
+	   $position: 3px -102px -203px;
+	             $i:0;
+	             @each $pos in free, easy, wide {
+	                $i: $i+1;
+	                &.#{$pos} {
+	                    background: url('../../img/rules_sprite.png') nth($position, $i) 0px;
+	                    background-repeat: no-repeat;
+	         }
+	    }
+	   } 
+	}
+	.rules_item:first-child {
+       margin-left: 3%;
+	}
+}
+footer {
+	height: 440px;
+	width: 100%;
+	.made {
+	   height: 40px;
+	   width: 115px;
+	   margin: 50px;
+	   float: left;
+	   font-family: $roboto;
+	   font-size: 13px;
+	   color: $black;
+	   a {
+	      text-decoration: none;
+	      color: $blue;
+	   }
+	}
+	h6 {
+	   display: inline-block;
+	   margin-top: 50px;
+	   float: left;
+	   font-family: $robotoBlack;
+	   font-size: 13px;
+	   margin-left: 3%;
+	   color: $black;
+	}
+	h6:nth-child(3) {
+	   margin-left: 40%;
+	}
+	h6:after {
+	   content: '';
+	   clear: both;
+	}
+	.social {
+	   float: right;
+	   display: inline-block;
+	   margin-top: 50px;
+	   height: 20px;
+	             width: 20px;
+	             margin-right: 20px;
+	             opacity: 0.6;
+	             $position: 5px -31px -67px -102px;
+	             $i:0;
+	             @each $pos in fb, g, tw, pic {
+	                $i: $i+1;
+	                &.#{$pos} {
+	                    background: url('../../img/social_sprite.png') nth($position, $i) 0px;
+	                    background-repeat: no-repeat;
+	         }
+	    }
+	}
+	.social:hover {
+	    cursor: pointer;
+	}
+	.social:after {
+	  content: '';
+	  clear: both;
+	}
+	.clear {
+	   display: block;
+	   clear: both;
+	}
+	.categories_item {
+	   float: left;
+	   display: inline-block;
+	   width: 15%;
+	   margin-top: 40px;
+	   li {
+	      font-family: $roboto;
+	      font-size: 13px;
+	      color: #2c3e50;
+	      margin-bottom: 17px;
+	   }
+	}
+	.categories_item:nth-child(9) {
+	  margin-left: 25%;
+	}
+}
+}

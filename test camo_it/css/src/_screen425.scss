@@ -1,22 +1,14 @@
-@import '_reset';
-@import '_variables';
-@import '_screen1024';
-@import '_screen425';
-@import '_screen320';
-
 @mixin border-radius ($radius) {
   -moz-border-radius: $radius;
   -webkit-border-radius: $radius;
   border-radius: $radius;
 }
 
-@media only screen and (min-width: 1025px) {
+@media only screen  and (min-device-width: 425px) and (max-device-width: 767px) {
 .container {
-	max-width: 1280px;
+	max-width: 767px;
 	margin: 0 auto;
 }
-}
-@media only screen and (min-width: 1025px) {
 header {
 	width: 100%;
 	height: 55px;
@@ -24,17 +16,17 @@ header {
 	.logo {
 	    display: inline-block;
 	    float: left;
-	    margin-left: 5%;
 	    color: $blue;
 	    font-family: $robotoSlab;
 	    font-size: 30px;
+	    width: 26%;
 	}
 	nav {
-	    width: 35%;
+	    width: 50%;
 	    display: inline-block;
 	    float: left;
-	    margin-left: 5%;
-	    margin-right: 5%;
+	    margin-left: 2%;
+	    margin-right: 2%;
 	    margin-top: 5px;
 	    a {
 	       text-decoration: none;
@@ -50,6 +42,7 @@ header {
 	    .submenu {
 	       display: none;
 	       position: absolute;
+	       z-index: 5;
 	       background-color: white;
 	       @include border-radius (5px);
            border: 2px solid #e9e3d8;
@@ -73,18 +66,41 @@ header {
 	     color: $black;
 	     opacity: 0.8;
 	}
-	.cur {
-	     margin-left: 3%;
+	.header_icon {
+	    display: none;
 	}
 	.lang:hover {
 	     cursor: pointer;
 	}
-	.header_icon {
+	
+	.fa-bars {
+	display: block;
+	float: right;
+	color: $black;
+	margin-right: 3%;
+	opacity: 0.7;
+    }
+    .icons425 {
+        display: none;
+	    float: right;
+        right: 155px;
+        background-color: white;
+        position: absolute;
+        z-index: 1;
+        height: 210px;
+        width: 50px;
+        .fa-times {
+          display: block;
+          color: $black;
+          opacity: 0.7;
+          margin-left: 10px;
+        }
+	    .header_icon {
 	      height: 30px;
 	      width: 30px;
+	      margin-bottom: 20px;
 	      position: relative;
-	      margin-left: 30px;
-	      display: inline-block;
+	      display: block;
 	      float: left;
 	      $position: 0px -56px -116px -177px;
 	      $i:0;
@@ -94,7 +110,7 @@ header {
 	             background: url('../../img/icons_sprite.png') nth($position, $i) 0px;
 	             background-repeat: no-repeat;
 	         }
-	    }
+	    } 
 	    span {
 	        position: absolute;
             z-index: 1;
@@ -115,16 +131,8 @@ header {
 	.header_icon:hover {
          cursor: pointer;
 	}
+    }
 }
-.fa-bars {
-	display: none;
-	opacity: 0;
-}
-.icons425 {
-	display: none;
-}
-}
-@media only screen  and (min-device-width: 768px) {
 .page {
     width: 100%;
     height: 742px;
@@ -134,7 +142,7 @@ header {
 	span {
 	    color: $blue;
 	    font-family: $roboto;
-	    font-size: 13px;
+	    font-size: 25px;
 	    font-weight: 300;
 	    margin-right: 30px;
 	    margin-top: 50px;
@@ -153,16 +161,20 @@ header {
 	}
 	h1 {
 	     font-family: $robotoCond;
-	     font-size: 48px;
+	     font-size: 55px;
 	     font-weight: bold;
 	     color: $black;
 	     margin-top: 30px;
 	}
-	.page_item {
+	.page_item:nth-child(5) {
 	     display: inline-block;
 	     float: left;
 	     height: 570px;
-	     width: 50%;
+	     width: 40%;
+	     position: absolute;
+         z-index: 3;
+         left: 11%;
+         height: 420px;
 	     margin-top: 30px;
 	     background-color: white;
 	     @include border-radius(5px 0px 0px 0px);
@@ -174,27 +186,36 @@ header {
 	      .page_foto img {
 	          height: 100%;
 	          width: 100%;
-	          @include border-radius(5px 0px 0px 0px);
+	          @include border-radius(5px);
 	      }
 	     .page_foto.active {
 	          display: block;
 	     } 
 	}
 	.page_item:nth-child(6) {
-	     @include border-radius(0px 5px 0px 0px);
+	     @include border-radius(5px 5px 0px 0px);
+	     position: relative;
+	     width: 100%;
+	     height: 583px;
+	     background-color: white;
 	     .fotos {
-	         margin: 30px;
-	         width: 75px;
+	         margin-right: 30px;
+	         margin-top: 460px;
+	         height: 75px;
 	         display: inline-block;
-	         height: 100%;
 	         float: left;
-	         li img {
+	         li { 
+	            display: inline-block;
+	            float: left;
+	            margin-right: 5px;
+	         img {
 	             height: 75px;
 	             width: 75px;
 	             display: block;
 	             opacity: 0.6;
 	             margin-bottom: 30px;
 	            }
+	           } 
 	         li img:hover {
 	             cursor: pointer;
 	         }
@@ -332,18 +353,16 @@ header {
 	            opacity: 1;
 	         }
 }
-}
-@media only screen  and (min-device-width: 768px) {
 .tabs {
     width: 100%;
     height: 375px;
     background-color: #f1edea;
     ul {
-    width: 86%;
+    width: 95%;
     height: 120px;
     background-color: white;
     border-bottom: 2px solid #e8e2d6;
-    padding-left: 180px;
+    padding-left: 38px;
     li {
        display: inline-block;
        background-color: white;
@@ -354,7 +373,7 @@ header {
        color: $black;
        opacity: 0.6;
        border: none;
-       padding: 20px 45px;
+       padding: 20px 20px;
     }
     li:hover {
        cursor: pointer;
@@ -370,28 +389,26 @@ header {
 	   display: none;
 	   width: 90%;
 	   background-color: white;
-	   padding: 75px 53px 0 75px;
-	   height: 130px;
+	   padding: 25px 51px 0 25px;
+	   height: 200px;
 	   @include border-radius(0 0 5px 5px);
 	   font-family: $roboto;
 	   font-weight: 300;
-	   font-size: 16px;
+	   font-size: 20px;
 	   color: $black;
 	   opacity: 0.9;
 	   line-height: 25px;
-	   webkit-columns: 400px 2;
-       -moz-columns: 400px 2;
-       columns: 400px 2;
-       -webkit-column-gap: 60px;
-       -moz-column-gap: 60px;
-       column-gap: 60px;
+	   -webkit-columns: 200px 2;
+       -moz-columns: 200px 2;
+       columns: 200px 2;
+       -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+       column-gap: 30px;
 	}
 	.tabs_item.active {
 	   display: block;
 	}
 }
-}
-@media only screen and (min-width: 1025px) {
 .popular {
 	background-color: #f1edea;
 	height: 575px;
@@ -417,9 +434,9 @@ header {
     display: block;
 	height: 30px;
 	width: 30px;
-    margin-top: -50px;
     float: right;
     margin-right: 5%;
+    margin-top: -50px;
     background: url(../../img/slide_arrows.png) -1143px -2px no-repeat;
     }
     .carousel-arrow-left:hover, .carousel-arrow-right:hover {
@@ -429,7 +446,7 @@ header {
 	display: block;
 	margin: 0 auto;
 	overflow: hidden;
-	width: 1170px;
+	width: 570px;
     ul {
     position: relative;
     width: 10000px;
@@ -470,18 +487,16 @@ header {
 	}
 }	
 }
-}
-@media only screen and (min-width: 1025px) {
 .rules {
 	width: 100%;
 	height: 200px;
 	background-color: #45413e;
 	.rules_item {
 	   height: 100%;
-	   width: 29%;
+	   width: 32%;
 	   display: inline-block;
 	   float: left;
-	   margin-top: 50px;
+	   margin-top: 15px;
 	   h3 {
 	      font-family: $robotoBlack;
 	      font-size: 18px;
@@ -492,14 +507,15 @@ header {
 	      font-family: $roboto;
 	      font-size: 14px;
 	      color: #868380;
-	      line-height: 25px;
+	      line-height: 19px;
 	   }
 	   .rules_foto {
-	      height: 90px;
+	      height: 115px;
 	      width: 65px;
 	      float: left;
 	      display: block;
 	      margin-right: 20px;
+	      margin-top: 20px;
 	   $position: 3px -102px -203px;
 	             $i:0;
 	             @each $pos in free, easy, wide {
@@ -511,19 +527,14 @@ header {
 	    }
 	   } 
 	}
-	.rules_item:first-child {
-       margin-left: 6%;
-	}
-}
-}
-@media only screen and (min-width: 1025px) {
-footer {
-	height: 440px;
+}	
+	footer {
+	height: 100px;
 	width: 100%;
 	.made {
 	   height: 40px;
 	   width: 115px;
-	   margin: 50px;
+	   margin: 30px;
 	   float: left;
 	   font-family: $roboto;
 	   font-size: 13px;
@@ -534,36 +545,23 @@ footer {
 	   }
 	}
 	h6 {
-	   display: inline-block;
-	   margin-top: 50px;
-	   float: left;
-	   font-family: $robotoBlack;
-	   font-size: 13px;
-	   margin-left: 3%;
-	   color: $black;
-	}
-	h6:nth-child(3) {
-	   margin-left: 40%;
-	}
-	h6:after {
-	   content: '';
-	   clear: both;
+	   display: none;
 	}
 	.social {
 	   float: right;
 	   display: inline-block;
-	   margin-top: 50px;
+	   margin-top: 30px;
 	   height: 20px;
-	             width: 20px;
-	             margin-right: 20px;
-	             opacity: 0.6;
-	             $position: 5px -31px -67px -102px;
-	             $i:0;
-	             @each $pos in fb, g, tw, pic {
-	                $i: $i+1;
-	                &.#{$pos} {
-	                    background: url('../../img/social_sprite.png') nth($position, $i) 0px;
-	                    background-repeat: no-repeat;
+	   width: 20px;
+	   margin-right: 20px;
+	   opacity: 0.6;
+	   $position: 5px -31px -67px -102px;
+	   $i:0;
+	   @each $pos in fb, g, tw, pic {
+	         $i: $i+1;
+	         &.#{$pos} {
+	                 background: url('../../img/social_sprite.png') nth($position, $i) 0px;
+	                 background-repeat: no-repeat;
 	         }
 	    }
 	}
@@ -579,19 +577,7 @@ footer {
 	   clear: both;
 	}
 	.categories_item {
-	   float: left;
-	   display: inline-block;
-	   width: 15%;
-	   margin-top: 40px;
-	   li {
-	      font-family: $roboto;
-	      font-size: 13px;
-	      color: #2c3e50;
-	      margin-bottom: 17px;
-	   }
-	}
-	.categories_item:nth-child(9) {
-	  margin-left: 20%;
-	}
+	display:none;
+}
 }
 }

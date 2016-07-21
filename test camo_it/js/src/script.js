@@ -21,7 +21,20 @@ $('nav a').hover(
     function() {
     $(this).find('ul').slideUp();
    }
-  );	
+  );
+
+// dropdown menu on tochscreen
+
+$('nav a').on('click', function(e) {
+   e.preventDefault();
+   $.ajax({
+    url: 'index.html', // указываем URL
+    success: function(){
+     $(this).find('ul').stop(true, true);
+     $(this).find('ul').slideDown();
+    }
+   });
+});
 
 //fotos change
 
@@ -63,6 +76,18 @@ $('ul.fotos').on('click', 'li:not(.active)', function() {
             currentLeftValue -= 300;
             elementsList.animate({ left : currentLeftValue + "px"}, 500);
         }     
-    }); 
+    });
+
+   //show icons425 block on 425-767px screen 
+
+$('.fa-bars').on('click', function() {
+    $('.icons425').show(); 
+});
+ 
+ //hide icons425 block on 425-767 screen
+
+$('.fa-times').on('click', function(){
+    $('.icons425').hide();
+});   
 
 })
