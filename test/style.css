@@ -1,0 +1,28 @@
+.responsive-box {
+    position: relative;
+    width: 50%;
+    margin: 100px auto;
+    display: block;
+}
+.responsive-box::before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: white;
+    text-align: center;
+    vertical-align: baseline;
+    border: 2px solid black;
+}
+.content:hover {
+    cursor: pointer;
+}
+p {
+    margin-top: 50%;
+}
