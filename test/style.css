@@ -1,20 +1,15 @@
 .responsive-box {
     position: relative;
-    width: 50%;
-    margin: 100px auto;
+    width: 100%;
     display: block;
 }
-.responsive-box::before {
+/*.responsive-box::before {
     content: "";
     display: block;
     padding-top: 100%;
-}
+}*/
 .content {
     position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
     background: white;
     text-align: center;
     vertical-align: baseline;
@@ -24,5 +19,5 @@
     cursor: pointer;
 }
 p {
-    margin-top: 50%;
+    margin: 20%;
 }
